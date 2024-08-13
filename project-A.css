@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: gunplay;
+    src: url(gunplayRg.ttf.otf);
+}
+
+body {
+    background:  rgb(2, 31, 31);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    margin-top: 50px;
+    font-size: 100px;
+    font-family: gunplay;
+    color: white;
+}

@@ -1,0 +1,228 @@
+[
+    {
+        "id": 1,
+        "name": "3x7 poly",
+        "price": 10,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 2,
+        "name": "4x7 poly",
+        "price": 20,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 3,
+        "name": "5x8 poly",
+        "price": 30,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 4,
+        "name": "6x10 poly",
+        "price": 40,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 5,
+        "name": "7x12 poly",
+        "price": 50,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 6,
+        "name": "8x12 poly",
+        "price": 60,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 7,
+        "name": "9x14 poly",
+        "price": 70,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 8,
+        "name": "9x20 poly",
+        "price": 80,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 9,
+        "name": "10x15 poly",
+        "price": 90,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 10,
+        "name": "10x20 poly",
+        "price": 100,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 11,
+        "name": "12x22 poly",
+        "price": 110,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 12,
+        "name": "21x30 poly",
+        "price": 120,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 13,
+        "name": "1lb paper",
+        "price": 130,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 14,
+        "name": "2lb paper",
+        "price": 140,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 15,
+        "name": "3lb paper",
+        "price": 150,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 16,
+        "name": "4lb paper",
+        "price": 160,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 17,
+        "name": "5lb paper",
+        "price": 170,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 18,
+        "name": "6lb paper",
+        "price": 180,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 19,
+        "name": "81b paper",
+        "price": 190,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 20,
+        "name": "10lb paper",
+        "price": 200,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 21,
+        "name": "12lb paper",
+        "price": 210,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 22,
+        "name": "14lb paper",
+        "price": 220,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 23,
+        "name": "16lb paper",
+        "price": 230,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 24,
+        "name": "201b paper",
+        "price": 240,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags" 
+    },
+    {
+        "id": 25,
+        "name": "7oz Plastic Cup (case 50x20)",
+        "price": 250,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups" 
+    },
+    {
+        "id": 26,
+        "name": "8oz Paper Cup (case 50x20)",
+        "price": 260,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups" 
+    },
+    {
+        "id": 27,
+        "name": "9oz Plastic Cup (case 50x20)",
+        "price": 270,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups" 
+    },
+    {
+        "id": 28,
+        "name": "12oz Plastic Cup (case 50x20)",
+        "price": 280,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups" 
+    },
+    {
+        "id": 29,
+        "name": "12oz Paper Cup (case 50x20)",
+        "price": 290,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups" 
+    },
+    {
+        "id": 30,
+        "name": "16oz Paper Cup (case 50x20)",
+        "price": 300,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups" 
+    },
+    {
+        "id": 31,
+        "name": "24oz Paper Cup (case 50x20)",
+        "price": 310,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups" 
+    },
+    {
+        "id": 32,
+        "name": "32oz Paper Cup (case 50x20)",
+        "price": 320,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups" 
+    }
+    
+    
+]

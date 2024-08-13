@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: gunplay;
+    src: url(gunplayRg.ttf.otf);
+}
+
+@font-face {
+    font-family: forque;
+    src: url(Forque.ttf);
+}
+
+@font-face {
+    font-family: sugar;
+    src: url(Saudagar.ttf);
+}
+
+body {
+    background:  rgb(21, 177, 177);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cat {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    font-family: gunplay;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.container001 {
+    position: absolute;
+    display: flex;
+    flex: wrap;    
+    padding: 0;
+    margin-top: -40px;
+    color: white;  
+    font-size: 22px;
+    gap: 10px;
+}
+
+.box001 {
+    background: linear-gradient(rgb(3, 41, 41), rgb(21, 177, 177));
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 640px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 40px 0px;
+    position: relative;
+}
+
+.box001 img {
+    scale: 0.7;
+    margin-top: 90px;
+    filter: drop-shadow(0 30px 20px black);
+
+}
+
+.box001 .img004 {
+    margin-top: 50px;
+    scale: 1;
+    filter: drop-shadow(0 30px 20px black);
+
+}
+
+.box001 .img003 {
+    margin-top: 20px;
+    scale: 0.95;
+    filter: drop-shadow(0 30px 20px black);
+
+}
+
+.box001 .img002 {
+    margin-top: 20px;
+    scale: 0.95;
+    filter: drop-shadow(0 30px 20px black);
+
+}
+
+.box001 .img001 {
+    margin-top: 20px;
+    scale: 0.95;
+    filter: drop-shadow(0 30px 20px black);
+
+}
+
+.box001 .img005 {
+    margin-top: 10px;
+    scale: 0.95;
+    filter: drop-shadow(0 30px 20px black);
+
+}
+
+.box001 .img006 {
+    margin-top: 20px;
+    scale: 0.95;
+    filter: drop-shadow(0 50px 20px black);
+
+}
+
+.box001 p {
+    font-family: sugar;
+    font-weight: 100;
+    font-size: 30px;
+    z-index: 3;
+}
+
+.box001 p span {
+    font-size: 15px;
+}
+
+.box001 .btns img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7489%) hue-rotate(24deg) brightness(102%) contrast(104%);
+    transition: ease-in-out 0.3s;
+    filter: drop-shadow(0 50px 20px rgb(20, 71, 59));
+
+}
+
+.box001:nth-child(1) .btns img:hover {
+    scale: 0.32;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7489%) hue-rotate(24deg) brightness(102%) contrast(104%);
+}
+
+.box001:nth-child(2) .btns img:hover {
+    scale: 0.32;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7489%) hue-rotate(24deg) brightness(102%) contrast(104%);
+}
+
+.box001:nth-child(3) .btns img:hover {
+    scale: 0.32;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7489%) hue-rotate(24deg) brightness(102%) contrast(104%);
+}
+
+.box001:nth-child(4) .btns img:hover {
+    scale: 0.32;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7489%) hue-rotate(24deg) brightness(102%) contrast(104%);
+}
+
+.box001:nth-child(5) .btns img:hover {
+    scale: 0.32;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7489%) hue-rotate(24deg) brightness(102%) contrast(104%);
+}
+
+.box001:nth-child(6) .btns img:hover {
+    scale: 0.32;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7489%) hue-rotate(24deg) brightness(102%) contrast(104%);
+}
+
+.box001:nth-child(1) .btns img {
+    scale: 0.3;
+    margin-top: 143px;
+}
+
+.box001:nth-child(2) .btns img {
+    scale: 0.3;
+}
+
+.box001:nth-child(3) .btns img {
+    scale: 0.3;
+}
+
+.box001:nth-child(4) .btns img {
+    margin-top: 178px;
+    scale: 0.3;
+}
+
+.box001:nth-child(5) .btns img {
+    scale: 0.3;
+    margin-top: 23px;
+}
+
+.box001:nth-child(6) .btns img {
+    scale: 0.3;
+    margin-top: 139px;
+}
+
+.foot {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 700px;
+}
+
+
+
