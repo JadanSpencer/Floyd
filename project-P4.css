@@ -191,6 +191,13 @@ header .icon-cart span {
     background: linear-gradient(rgb(3, 41, 41), rgb(2, 31, 31));
     padding: 40px 5px;
     border-radius: 10px;
+    transition: all ease-in-out 0.4s;
+}
+
+.listProduct .item:hover {
+    transform: translateZ(30px) scale(1.02);
+    background: linear-gradient(rgb(26, 192, 170), rgb(3, 41, 41));
+
 }
 
 .listProduct .item h2 {
@@ -222,6 +229,22 @@ header .icon-cart span {
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s ease-in-out;
+}
+
+.cartTab .totalPriceContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+    font-family: sugar;
+    color: white;
+    background-color: rgb(3, 48, 48);
+    border-top: 2px solid rgb(11, 75, 75);
+}
+
+.cartTab .totalPrice {
+    font-weight: bold;
+    color: rgb(27, 216, 216);
 }
 
 body.showCart .cartTab {

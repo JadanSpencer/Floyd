@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project-D.css">
+    <title>Delivery Page</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+</head>
+<body>
+    <div class="biz">
+        <h1>Floyds Distributors</h1>
+        <h4><------Select your parish------></h4>
+    </div>
+
+    <div class="parishes1">
+        <!-- Parish images with IDs -->
+        <img class="p1" id="man" src="man-removebg-preview.png" alt="Manchester">
+        <img class="p2" id="st-james" src="saint-james-parish-map-administrative-division-jamaica-vector-illustration_601298-26453-removebg-preview.png" alt="St James">
+        <img class="p3" id="trelawney" src="trelawney-removebg-preview.png" alt="Trelawney">
+        <img class="p4" id="st-mary" src="mary-removebg-preview.png" alt="St Mary">
+        <img class="p5" id="st-catherine" src="cath-removebg-preview.png" alt="St Catherine">
+        <img class="p6" id="kingston" src="kgstn-removebg-preview.png" alt="Kingston & St Andrew">
+        <img class="p7" id="st-elizabeth" src="elizabeth-removebg-preview.png" alt="St Elizabeth">
+        <img class="p8" id="st-ann" src="ann-removebg-preview.png" alt="St Ann">
+        <img class="p9" id="st-thomas" src="thomas-removebg-preview.png" alt="St Thomas">
+        <img class="p10" id="westmoreland" src="westmore-removebg-preview.png" alt="Westmoreland">
+        <img class="p11" id="hanover" src="han-removebg-preview.png" alt="Hanover">
+        <img class="p12" id="clarendon" src="cla-removebg-preview.png" alt="Clarendon">
+    </div>
+
+    <div class="parishName">
+        <h3 class="N1">Manchester</h3>
+        <h3 class="N2">St James</h3>
+        <h3 class="N3">Trelawney</h3>
+        <h3 class="N4">St Mary</h3>
+        <h3 class="N5">St Catherine</h3>
+        <h3 class="N6">Kingston<br>&<br>St. Andrew</h3>
+        <h3 class="N7">St Elizabeth</h3>
+        <h3 class="N8">St Ann</h3>
+        <h3 class="N9">St Thomas</h3>
+        <h3 class="N10">Westmoreland</h3>
+        <h3 class="N11">Hanover</h3>
+        <h3 class="N12">Clarendon</h3>
+    </div>
+
+    <div class="delivery-form-container" id="deliveryFormContainer" style="display: none;">
+        <form id="deliveryForm" class="delivery-form">
+            <button type="button" id="closeForm" class="close-form-btn">&times;</button>
+            <label for="parish">Parish:</label>
+            <input type="text" id="parish" name="parish" readonly>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="business">Name/Business Name:</label>
+            <input type="text" id="business" name="business" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+    const parishImages = document.querySelectorAll('.parishes1 img');
+    const deliveryFormContainer = document.getElementById('deliveryFormContainer');
+    const parishInput = document.getElementById('parish');
+    const closeFormButton = document.getElementById('closeForm');
+
+    // Initialize EmailJS
+    emailjs.init("KrH-tjX0gnZQ8qbEf"); // Use the correct Product Key here
+
+    parishImages.forEach(img => { 
+        img.addEventListener('click', () => {
+            deliveryFormContainer.style.display = 'flex';
+            parishInput.value = img.alt;
+        });
+    });
+
+    closeFormButton.addEventListener('click', () => {
+        deliveryFormContainer.style.display = 'none';
+    });
+
+    document.getElementById('deliveryForm').addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const parish = document.getElementById('parish').value;
+        const address = document.getElementById('address').value;
+        const contact = document.getElementById('contact').value;
+        const business = document.getElementById('business').value;
+        const email = document.getElementById('email').value;
+
+        const carts = JSON.parse(localStorage.getItem('cart')) || [];
+        const listProducts = JSON.parse(localStorage.getItem('listProducts')) || [];
+        
+        const items = carts.map(cart => {
+            const product = listProducts.find(p => p.id == cart.product_id);
+            return {
+                name: product ? product.name : 'Unknown',
+                quantity: cart.quantity,
+                price: (product ? product.price * cart.quantity : 0).toFixed(2)
+            };
+        });
+
+        const totalPrice = items.reduce((acc, item) => acc + parseFloat(item.price), 0).toFixed(2);
+
+        // Format receipt with line breaks for each item
+        const receipt = `<pre>${items.map(item => 
+            `${item.name} - $${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`
+        ).join('\n')}\nTotal Price: $${totalPrice}</pre>`;
+
+        if (parish && address && contact && business && email) {
+            emailjs.send('service_p5zoxqp', 'template_wzk00vd', {
+                parish: parish,
+                address: address,
+                contact: contact,
+                business: business,
+                email: email,
+                receipt: receipt,
+                totalPrice: totalPrice
+            }).then(function(response) {
+                console.log('Success:', response);
+                alert('Your order has been placed successfully!');
+                document.getElementById('deliveryForm').reset();
+                deliveryFormContainer.style.display = 'none';
+                localStorage.removeItem('cart');
+            }, function(error) {
+                console.error('Error:', error);
+                alert('There was a problem placing your order.');
+            });
+        } else {
+            alert('Please fill in all fields.');
+        }
+    });
+});
+
+
+
+    </script>
+</body>
+</html>

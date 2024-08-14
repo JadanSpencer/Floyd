@@ -1,0 +1,322 @@
+@font-face {
+    font-family: gunplay;
+    src: url(gunplayRg.ttf.otf);
+}
+
+@font-face {
+    font-family: gunplay3d;
+    src: url(gunplay3d.otf);
+}
+
+@font-face {
+    font-family: vanilla;
+    src: url(VanillaWhale.ttf.otf);
+}
+
+@font-face {
+    font-family: bavex;
+    src: url(Bavex.ttf);
+}
+
+@font-face {
+    font-family: sugar;
+    src: url(Saudagar.ttf);
+}
+
+@font-face {
+    font-family: forque;
+    src: url(Forque.ttf);
+}
+
+@font-face {
+    font-family: bake;
+    src: url(Bakery.ttf);
+}
+
+@font-face {
+    font-family: summer;
+    src: url(Summer\ Island\ TTF\ Personal.ttf);
+}
+
+@font-face {
+    font-family: dealer;
+    src: url(dealerplate\ california.otf);
+}
+
+@font-face {
+    font-family: long;
+    src: url(Longevity.ttf);
+}
+
+*{
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(2, 31, 31);
+}
+
+.biz {
+    color: white;
+    font-size: 60px;
+    font-family: dealer;
+}
+
+.biz h4 {
+    font-family: sugar;
+}
+
+.parishes1 {
+    scale: 0.45;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    margin-right: 700px;
+    margin-top: -400px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(8deg) brightness(104%) contrast(102%) drop-shadow(0 50px 10px black);
+    transition: all ease-in-out 0.4s;
+}
+
+.parishes1 .p1 {
+    scale: 1.09;
+}
+
+.parishes1 .p4 {
+    scale: 1.09;
+}
+
+.parishes1 .p6 {
+    scale: 1.9;
+}
+
+.parishes1 .p9 {
+    scale: 1.9;
+}
+
+.parishes1 .p10 {
+    scale: 1.05;
+}
+
+.parishes1 .p11 {
+    scale: 1.07;
+}
+
+.parishes1 .p12 {
+    scale: 2.05;
+}
+
+.parishes1 .p13 {
+    scale: 2;
+}
+
+.parishes1 .p1:hover {
+    scale: 1.12;
+
+}
+
+.parishes1 .p2:hover {
+    scale: 1.04;
+
+}
+
+.parishes1 .p3:hover {
+    scale: 1.04;
+
+}
+
+.parishes1 .p4:hover {
+    scale: 1.12;
+
+}
+
+.parishes1 .p5:hover {
+    scale: 1.05;
+
+}
+
+.parishes1 .p6:hover {
+    scale: 2.15;
+
+}
+
+.parishes1 .p7:hover {
+    scale: 1.04;
+
+}
+
+.parishes1 .p8:hover {
+    scale: 1.04;
+
+}
+
+.parishes1 .p9:hover {
+    scale: 2.04;
+
+}
+
+.parishes1 .p10:hover {
+    scale: 1.09;
+
+}
+
+.parishes1 .p11:hover {
+    scale: 1.09;
+
+}
+
+.parishes1 .p12:hover {
+    scale: 2.15;
+
+}
+
+.parishName {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 200px;
+    top: 500px;
+    left: 100px;
+    font-family: gunplay;
+    font-size: 15px;
+    color: rgb(113, 148, 148);
+}
+
+.parishName .N1 {
+    position: absolute;
+    margin-left: 210px;
+}
+
+.parishName .N2 {
+    position: absolute;
+    margin-left: 460px;
+}
+
+.parishName .N3 {
+    position: absolute;
+    margin-left: 720px;
+}
+
+.parishName .N4 {
+    position: absolute;
+    margin-left: 980px;
+}
+
+.parishName .N5 {
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 270px;
+}
+
+.parishName .N6 {
+    position: absolute;
+    margin-left: 460px;
+    margin-top: 250px;
+}
+
+.parishName .N7 {
+    position: absolute;
+    margin-left: 720px;
+    margin-top: 270px;
+}
+
+.parishName .N8 {
+    position: absolute;
+    margin-left: 980px;
+    margin-top: 250px;
+}
+
+.parishName .N9 {
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 510px;
+}
+
+.parishName .N10 {
+    position: absolute;
+    margin-left: 460px;
+    margin-top: 500px;
+}
+
+.parishName .N11 {
+    position: absolute;
+    margin-left: 720px;
+    margin-top: 470px;
+}
+
+.parishName .N12 {
+    position: absolute;
+    margin-left: 980px;
+    margin-top: 500px;
+}
+
+/* project-D.css */
+
+/* Additional styles for the delivery page */
+.delivery-form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: fixed; /* Ensure the form stays on top */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure the form is on top of other content */
+}
+
+.delivery-form {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgb(14, 129, 133);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Positioning for the close button */
+}
+
+.close-form-btn {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-form-btn:hover {
+    color: #f00; /* Change color on hover */
+}
+
+.delivery-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.delivery-form input, 
+.delivery-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.delivery-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: teal;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delivery-form button:hover {
+    background-color: #45a049;
+}

@@ -64,7 +64,12 @@ body {
     scale: 0.7;
     margin-top: 90px;
     filter: drop-shadow(0 30px 20px black);
+    transition: all ease-in-out 0.2s;
 
+}
+
+.box001 img:hover{
+    scale: 1.1;
 }
 
 .box001 .img004 {

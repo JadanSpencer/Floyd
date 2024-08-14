@@ -150,8 +150,6 @@ body{
 .title{
     font-size: 40px;
     padding: 50px;
-    
-    
 }
 header {
     display: flex;
@@ -229,6 +227,22 @@ header .icon-cart span {
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s ease-in-out;
+}
+
+.cartTab .totalPriceContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+    font-family: sugar;
+    color: white;
+    background-color: rgb(3, 48, 48);
+    border-top: 2px solid rgb(11, 75, 75);
+}
+
+.cartTab .totalPrice {
+    font-weight: bold;
+    color: rgb(27, 216, 216);
 }
 
 body.showCart .cartTab {

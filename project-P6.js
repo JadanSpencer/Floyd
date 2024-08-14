@@ -11,6 +11,7 @@ let carts = [];
 // Search Elements
 let searchBar = document.getElementById('search-bar');
 let suggestionsList = document.getElementById('suggestions');
+let currentIndex = -1;
 
 // Event listeners for cart functionality
 iconCart.addEventListener('click', () => {
@@ -56,6 +57,7 @@ searchBar.addEventListener('input', () => {
     } else {
         suggestionsList.innerHTML = ''; // Clear suggestions
         suggestionsList.style.display = 'none';
+        currentIndex = -1; // Reset the index when suggestions are hidden
     }
 });
 
@@ -64,45 +66,66 @@ const displaySuggestions = (suggestions) => {
     suggestionsList.innerHTML = '';
     if (suggestions.length > 0) {
         suggestionsList.style.display = 'block';
-        suggestions.forEach(product => {
+        suggestions.forEach((product, index) => {
             let suggestionItem = document.createElement('div');
             suggestionItem.textContent = product.name;
             suggestionItem.dataset.id = product.id;
+            suggestionItem.classList.add('suggestion-item');
             suggestionItem.addEventListener('click', () => {
                 searchBar.value = product.name;
                 suggestionsList.innerHTML = ''; // Clear suggestions
                 suggestionsList.style.display = 'none';
                 redirectToProductPage(product.id); // Redirect based on selected suggestion
+                currentIndex = -1; // Reset the index
             });
             suggestionsList.appendChild(suggestionItem);
         });
     } else {
         suggestionsList.style.display = 'none';
+        currentIndex = -1; // Reset the index when suggestions are hidden
     }
 };
 
-// Hide suggestions when clicking outside
-document.addEventListener('click', (event) => {
-    if (!searchBar.contains(event.target) && !suggestionsList.contains(event.target)) {
-        suggestionsList.style.display = 'none';
+// Handle keyboard navigation for the suggestions list
+searchBar.addEventListener('keydown', (event) => {
+    const suggestions = Array.from(suggestionsList.querySelectorAll('.suggestion-item'));
+    if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        if (currentIndex < suggestions.length - 1) {
+            currentIndex++;
+            updateSuggestionFocus(suggestions);
+        }
+    } else if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSuggestionFocus(suggestions);
+        }
+    } else if (event.key === 'Enter') {
+        event.preventDefault();
+        if (currentIndex >= 0 && currentIndex < suggestions.length) {
+            const selectedProductId = suggestions[currentIndex].dataset.id;
+            redirectToProductPage(parseInt(selectedProductId, 10));
+        }
     }
 });
 
-// Handle Enter key for search
-searchBar.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-        event.preventDefault(); // Prevent the default form submission behavior
-        const query = searchBar.value.toLowerCase();
-        if (query) {
-            const matchedProduct = listProducts.find(product => product.name.toLowerCase() === query);
-            if (matchedProduct) {
-                redirectToProductPage(matchedProduct.id);
-            } else {
-                console.error('No matching product found for query:', query);
-            }
-        } else {
-            console.error('Search query is empty.');
+// Update the focus and styling of suggestion items
+const updateSuggestionFocus = (suggestions) => {
+    suggestions.forEach((item, index) => {
+        item.classList.remove('highlight');
+        if (index === currentIndex) {
+            item.classList.add('highlight');
+            item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
+    });
+};
+
+// Ensure that suggestions list is hidden when clicking outside
+document.addEventListener('click', (event) => {
+    if (!searchBar.contains(event.target) && !suggestionsList.contains(event.target)) {
+        suggestionsList.style.display = 'none';
+        currentIndex = -1; // Reset the index when suggestions are hidden
     }
 });
 
@@ -173,14 +196,23 @@ const addToCart = (product_id) => {
 const addCartToHtml = () => {
     listCartHtml.innerHTML = '';
     let totalQuantity = 0;
+    let totalPrice = 0;
+
     if (carts.length > 0) {
         carts.forEach(cart => {
             totalQuantity += cart.quantity;
             let newCart = document.createElement('div');
             newCart.classList.add('item');
             newCart.dataset.id = cart.product_id;
-            let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
-            let info = listProducts[positionProduct];
+            let positionProduct = listProducts.find(value => value.id == cart.product_id);
+            if (!positionProduct) {
+                console.error('Product not found:', cart.product_id);
+                return;
+            }
+            let info = positionProduct;
+            let itemTotalPrice = info.price * cart.quantity; // Calculate total price for this item
+            totalPrice += itemTotalPrice; // Accumulate total price
+
             newCart.innerHTML = `
                 <div class="image">
                     <img src="${info.image}" alt="${info.name}">
@@ -188,8 +220,8 @@ const addCartToHtml = () => {
                 <div class="name">
                     ${info.name}
                 </div>
-                <div class="totalPrice">
-                    $${info.price * cart.quantity}
+                <div class="itemTotalPrice">
+                    $${itemTotalPrice.toFixed(2)}
                 </div>
                 <div class="quantity">
                     <span class="minus">-</span>
@@ -199,7 +231,10 @@ const addCartToHtml = () => {
             listCartHtml.appendChild(newCart);
         });
     }
+
     amount.innerText = totalQuantity;
+    console.log('Total Price:', totalPrice.toFixed(2)); // Log the total price
+    document.querySelector('.totalPriceContainer .totalPrice').innerText = `$${totalPrice.toFixed(2)}`;
 };
 
 // Update cart quantity
@@ -238,30 +273,66 @@ const addCarttoMemory = () => {
     localStorage.setItem('cart', JSON.stringify(carts));
 };
 
+// Handle the checkout button click only if the element exists
+const handleCheckout = () => {
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    if (checkoutBtn) {
+        checkoutBtn.addEventListener('click', () => {
+            // Redirect to the delivery page
+            window.location.href = 'project-D.html'; // Ensure this URL matches your actual delivery page
+        });
+    }
+};
+
 // Initialize the application
 const initApp = () => {
-    fetch('products.json')
-        .then(response => response.json())
-        .then(data => {
-            listProducts = data;
-            const path = window.location.pathname;
-            const page = path.split('/').pop().split('.').shift(); // Get page name without extension
-            const categoryMapping = {
-                'project-P2': 'householdSupplies',
-                'project-P3': 'bags',
-                'project-P4': 'cups',
-                'project-P5': 'lunchBox',
-                'project-P6': 'foodContainer',
-                'project-P7': 'other'
-            };
-            const category = categoryMapping[page] || ''; // Default to empty if not found
-            addDataToHtml(category);
-            if (localStorage.getItem('cart')) {
-                carts = JSON.parse(localStorage.getItem('cart'));
-                addCartToHtml();
-            }
-        })
-        .catch(error => console.error('Error fetching product data:', error));
+    const storedProducts = localStorage.getItem('listProducts');
+    if (storedProducts) {
+        listProducts = JSON.parse(storedProducts);
+        const path = window.location.pathname;
+        const page = path.split('/').pop().split('.').shift(); // Get page name without extension
+        const categoryMapping = {
+            'project-P2': 'householdSupplies',
+            'project-P3': 'bags',
+            'project-P4': 'cups',
+            'project-P5': 'lunchBox',
+            'project-P6': 'foodContainer',
+            'project-P7': 'other'
+        };
+        const category = categoryMapping[page] || ''; // Default to empty if not found
+        addDataToHtml(category);
+        if (localStorage.getItem('cart')) {
+            carts = JSON.parse(localStorage.getItem('cart'));
+            addCartToHtml();
+        }
+        handleCheckout(); // Call the function to add checkout event listener
+    } else {
+        // Fetch products and store them if not present in localStorage
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                listProducts = data;
+                localStorage.setItem('listProducts', JSON.stringify(listProducts)); // Store products in localStorage
+                const path = window.location.pathname;
+                const page = path.split('/').pop().split('.').shift(); // Get page name without extension
+                const categoryMapping = {
+                    'project-P2': 'householdSupplies',
+                    'project-P3': 'bags',
+                    'project-P4': 'cups',
+                    'project-P5': 'lunchBox',
+                    'project-P6': 'foodContainer',
+                    'project-P7': 'other'
+                };
+                const category = categoryMapping[page] || ''; // Default to empty if not found
+                addDataToHtml(category);
+                if (localStorage.getItem('cart')) {
+                    carts = JSON.parse(localStorage.getItem('cart'));
+                    addCartToHtml();
+                }
+                handleCheckout(); // Call the function to add checkout event listener
+            })
+            .catch(error => console.error('Error fetching product data:', error));
+    }
 };
 
 initApp();
