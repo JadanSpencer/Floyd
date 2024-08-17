@@ -595,9 +595,23 @@
         "category": "householdSupplies" 
     },
     {
+        "id": 88,
+        "name": "Nitrile Gloves",
+        "price": 880,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "householdSupplies" 
+    },
+    {
         "id": 86,
         "name": "17inch Meat Film",
         "price": 860,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "other" 
+    },
+    {
+        "id": 87,
+        "name": "15inch Meat Film",
+        "price": 870,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other" 
     }
