@@ -49,14 +49,15 @@
 }
 
 * {
-    margin: auto;
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
 }
 
 
 body {
-    margin-left: 207px;
-    width: 100%;
+    margin: auto;
+    max-width: 100%;
     height: 100vh;
     background: rgb(2, 31, 31);
     display: flex;
@@ -65,11 +66,15 @@ body {
     color: black;
 }
 
+.section1 {
+    margin-left: -72px;
+}
+
 .section1 .companyTitle {
     font-size: 60px;
     font-family: long;
     margin-top: -300px;
-    color: rgb(183, 241, 241);
+    color: rgb(17, 216, 216);
     margin-left: 90px;
 }
 
@@ -209,23 +214,18 @@ body {
     scale: 1.1;
 }
 
-.section1 .navbar .shoppingBag {
-    position: absolute;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(107deg) brightness(103%) contrast(101%);
+.section1 .icon-cart img {
     scale: 0.3;
-    margin-top: -100px;
-    margin-left: -70px;
-    transition: ease-in-out 0.5s;
-}
-
-.section1 .navbar .shoppingBag:hover {
-    scale: 0.32;
-    color: #76ABAE;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(100%) contrast(105%);
+    transition: .2s ease-in-out;
+    position: absolute;
+    top: -100px;
+    right: -160px;
 }
 
 .section1 .searchBar {
     position: absolute;
-    height: 27px;
+    height: 40px;
     display: flex;
     cursor: pointer;
     padding: 7px 190px;
@@ -1609,19 +1609,23 @@ body {
 .rectangle03 {
     position: absolute;
     width: 100%;
-    height: 210px;
+    height: 270px;
     background: #fff;
     margin-top: 2990px;
-    margin-left: -410px;
     padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .rectangle03 .footer .container01 {
     width: 1140px;
     margin: auto;
     display: flex;
+    flex: row;
+    gap: 150px;
     justify-content: center;
-    margin-left: -370px;
+    margin-left: 100px;
 }
 
 .rectangle03 .footer {
@@ -1702,18 +1706,21 @@ a:hover {
 }
 
 .bottomBar {
+    position: absolute;
     background: transparent;
     text-align: center;
     padding: 10px 0;
     margin-top: 50px;
+    margin-left: 250px;
     color: white;
+    width: 60%;
 }
 
 .bottomBar p {
     color: white;
     margin: 0;
     font-size: 10px;
-    padding: 7px;
+    padding: 13px;
 }
 
 .suggestions-list {
@@ -1741,4 +1748,293 @@ a:hover {
     background-color: #f0f0f0;
     color: teal;
 }
+
+@media screen and (max-width:600px) {
+    .section1 .navbar {
+        position: absolute;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-right: 250px;
+        z-index: 10;
+    }
+    .borderImg {
+        visibility: hidden;
+    }
+    .rectangleIchi {
+        width: 100%;
+        position: absolute;
+        height: 90px;
+        background: rgb(0, 109, 109);
+        margin-left: -30px;
+    }
+    .section1 .searchBar {
+        position: absolute;
+        height: 40px;
+        display: flex;
+        cursor: pointer;
+        padding: 7px 190px;
+        margin-top: 20px;
+        margin-left: -20px;
+        border-radius: 50px;    
+        background: rgb(0, 109, 109);
+        border: solid 1px white;
+    }
+.boxTitles .easyTitle {
+    line-height: 80px;
+    font-family: sugar;
+    color: rgb(35, 221, 221);
+    font-weight: 700;
+    visibility: hidden;
+}
+.images .paperBags {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: -600px;
+    scale: 0.9;
+    visibility: hidden;
+}
+.section1 .icon-cart img {
+    scale: 0.3;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(100%) contrast(105%);
+    transition: .2s ease-in-out;
+    position: absolute;
+    top: 170px;
+    right: -40px;
+}
+
+.circle1 {
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    background: teal;
+    margin-top: 100px;
+    margin-left: -600px;
+    opacity: 0.7;
+    visibility: hidden;
+}
+
+.circle2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgb(4, 118, 133);
+    margin-top: 100px;
+    margin-left: -400px;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+.circle3 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgb(70, 188, 204);
+    margin-top: 200px;
+    margin-left: -550px;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+.circle4 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgb(4, 102, 102);
+    margin-top: 210px;
+    margin-left: -400px;
+    opacity: 0.6;
+    visibility: hidden;
+}
+.boxTitles {
+    visibility: hidden;
+}
+.backTitles {
+    visibility: hidden;
+}
+
+.learnBtn {
+    top: 20px;
+    right: 150px;
+}
+.shopBtn {
+    top: 90px;
+    right: 150px;
+}
+body {
+    max-width: 600px;
+}
+.rectangle03 {
+    visibility: hidden;
+}
+.rectangle3 .sect {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 220px;
+    margin-left: 220px;
+    margin-top: 55px;
+}
+
+.heading1 {
+    visibility: hidden;
+    font-family: long;
+    margin-top: 7px;
+    margin-left: 85px;
+    color: white;
+}
+
+.lower1 {
+    visibility: hidden;
+    margin-left: 17px;
+    color: teal;
+}
+
+.icon1 {
+    visibility: hidden;
+    filter: brightness(0.13) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
+    scale: 0.15;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -230px;
+}
+
+.heading2 {
+    visibility: hidden;
+    font-family: long;
+    margin-top: -57px;
+    margin-left: 375px;
+    color: white;
+}
+
+.lower2 {
+    visibility: hidden;
+    margin-left: 337px;
+    color: teal;
+}
+
+.icon2 {
+    visibility: hidden;
+    filter: brightness(0) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
+    scale: 0.15;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 40px;
+}
+
+.heading3 {
+    visibility: hidden;
+    font-family: long;
+    margin-top: -57px;
+    margin-left: 610px;
+    color: white;
+}
+
+.lower3 {
+    visibility: hidden;
+    margin-left: 606px;
+    color: teal;
+}
+
+.icon3 {
+    visibility: hidden;
+    position: absolute;
+    filter: brightness(0) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
+    scale: 0.11;
+    margin-top: -265px;
+    margin-left: 315px;
+}
+
+.heading4 {
+    visibility: hidden;
+    font-family: long;
+    margin-top: -80px;
+    margin-left: 870px;
+    color: white;
+}
+
+.lower4 {
+    visibility: hidden;
+    margin-left: 860px;
+    color: teal;
+}
+
+.icon4 {
+    visibility: hidden;
+    filter: brightness(0) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
+    scale: 0.11;
+    position: absolute;
+    margin-top: -295px;
+    margin-left: 590px;
+}
+
+.heading5 {
+    visibility: hidden;
+    font-family: long;
+    margin-top: -80px;
+    margin-left: 1197px;
+    color: white;
+}
+
+.lower5 {
+    visibility: hidden;
+    margin-left: 1175px;
+    color: teal; 
+}
+
+.icon5 {
+    visibility: hidden;
+    filter: brightness(0) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
+    scale: 0.15;
+    position: absolute;
+    margin-top: -290px;
+    margin-left: 890px;
+    transform: rotate(15deg);
+}
+.rectangle01 {
+    visibility: hidden;
+}
+.rectangle3 {
+    max-width: 600px;
+    margin-left: -30px;
+}
+.rectangle1{
+    max-width: 600px;
+    margin-left: -30px;
+}
+.rectangle2 {
+    visibility: hidden;
+}
+.section1 {
+    margin-left: -43px;
+}
+.section1 .pSlider {
+    margin-top: -550px;
+    visibility: hidden;
+}
+.rectangle4 {
+    position: absolute;
+    width: 1100px;
+    height: 200px;
+    margin-top: 3150px;
+    margin-left: 60px;
+    border-radius: 10px;
+    z-index: 2;
+    background: teal;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgb(7, 102, 131);
+}
+}
+
+
 
