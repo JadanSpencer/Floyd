@@ -649,5 +649,14 @@
         "price": 920,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other" 
+    },
+    {
+        "id": 93,
+        "name": "Thermal Rolls",
+        "price": 930,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "other" 
     }
+
+
 ]
