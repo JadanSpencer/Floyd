@@ -586,5 +586,19 @@
         "price": 840,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies" 
+    },
+    {
+        "id": 85,
+        "name": "Latex Gloves (case 10x100units)",
+        "price": 850,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "householdSupplies" 
+    },
+    {
+        "id": 86,
+        "name": "17inch Meat Film",
+        "price": 860,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "other" 
     }
 ]
