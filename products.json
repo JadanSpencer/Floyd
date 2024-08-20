@@ -65,7 +65,7 @@
     {
         "id": 10,
         "name": "10x20 poly",
-        "price": 100,
+        "price": 6521.74,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
@@ -79,7 +79,7 @@
     {
         "id": 12,
         "name": "16x29 poly",
-        "price": 120,
+        "price": 7500,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
@@ -205,14 +205,56 @@
     {
         "id": 29,
         "name": "12oz Paper Cup (case 50x20)",
-        "price": 290,
+        "price": 6426.08,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 99,
+        "name": "12oz Plastic Cup color (case 50x20)",
+        "price": 5265,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 100,
+        "name": "12oz Cold Cup (case 50x20)",
+        "price": 7687,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 101,
+        "name": "12oz Smoothie Cup (case 50x20)",
+        "price": 16328.75,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 30,
-        "name": "16oz Paper Cup (case 50x20)",
-        "price": 300,
+        "name": "16oz Paper Cup (case 25x40)",
+        "price": 16965,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 103,
+        "name": "16oz Smoothie Cup (case 50x20)",
+        "price": 18940.62,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 104,
+        "name": "16oz Dome Lid (case 50x20)",
+        "price": 9375,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 102,
+        "name": "16/12oz Cup Lid (case 50x20)",
+        "price": 8100,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "cups"
     },
@@ -220,6 +262,13 @@
         "id": 31,
         "name": "24oz Paper Cup (case 50x20)",
         "price": 310,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 105,
+        "name": "1oz Portion Cup (case 50x40)",
+        "price": 8162.70,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "cups"
     },
@@ -317,7 +366,7 @@
     {
         "id": 45,
         "name": "1200ml Food Container",
-        "price": 450,
+        "price": 7200,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "foodContainer"
     },
@@ -367,6 +416,34 @@
         "id": 52,
         "name": "12Pk Egg Tray",
         "price": 520,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 95,
+        "name": "1lb Aluminum Pan",
+        "price": 8136.13,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 96,
+        "name": "1lb Aluminum Pan Lid",
+        "price": 3391.30,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 97,
+        "name": "1.5lb Aluminum Pan",
+        "price": 9347.83,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 98,
+        "name": "1.5lb Aluminum Pan Lid",
+        "price": 3206.52,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "foodContainer"
     },
@@ -499,21 +576,21 @@
     {
         "id": 71,
         "name": "14-inch mop (single)",
-        "price": 710,
+        "price": 250,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
         "id": 72,
         "name": "16-inch mop (single)",
-        "price": 720,
+        "price": 260,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
         "id": 73,
         "name": "18-inch mop (single)",
-        "price": 730,
+        "price": 377,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
@@ -547,8 +624,8 @@
     },
     {
         "id": 78,
-        "name": "80litre Bin",
-        "price": 780,
+        "name": "18litre/5gal Bin",
+        "price": 3200,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
@@ -659,8 +736,8 @@
     },
     {
         "id": 94,
-        "name": "Vanilla Extract",
-        "price": 940,
+        "name": "18*1500 Palette Wrap",
+        "price": 12521.80,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other"
     }
