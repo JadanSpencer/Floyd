@@ -477,6 +477,151 @@
   }
 });
     </script>
+    <script>
+        // searchBar.js
+
+// Wait until the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    const searchBar = document.getElementById('search-bar');
+    const suggestionsList = document.getElementById('suggestions');
+    let listProducts = [];
+    let currentIndex = -1;
+
+    // Fetch products data from local storage or fetch if not present
+    const fetchProducts = async () => {
+        try {
+            const response = await fetch('products.json');
+            const data = await response.json();
+            listProducts = data;
+            localStorage.setItem('listProducts', JSON.stringify(listProducts));
+        } catch (error) {
+            console.error('Error fetching product data:', error);
+        }
+    };
+
+    // Handle search bar input changes
+    const handleSearchInput = () => {
+        const query = searchBar.value.toLowerCase();
+        if (query) {
+            const suggestions = listProducts.filter(product => product.name.toLowerCase().includes(query));
+            displaySuggestions(suggestions);
+        } else {
+            suggestionsList.innerHTML = '';
+            suggestionsList.style.display = 'none';
+            currentIndex = -1;
+        }
+    };
+
+    // Display the suggestions in the dropdown
+    const displaySuggestions = (suggestions) => {
+        suggestionsList.innerHTML = '';
+        if (suggestions.length > 0) {
+            suggestionsList.style.display = 'block';
+            suggestions.forEach((product, index) => {
+                const suggestionItem = document.createElement('div');
+                suggestionItem.textContent = product.name;
+                suggestionItem.dataset.id = product.id;
+                suggestionItem.classList.add('suggestion-item');
+                suggestionItem.addEventListener('click', () => {
+                    searchBar.value = product.name;
+                    suggestionsList.innerHTML = '';
+                    suggestionsList.style.display = 'none';
+                    redirectToProductPage(product.id);
+                    currentIndex = -1;
+                });
+                suggestionsList.appendChild(suggestionItem);
+            });
+        } else {
+            suggestionsList.style.display = 'none';
+            currentIndex = -1;
+        }
+    };
+
+    // Handle keyboard navigation in the search suggestions dropdown
+    const handleSearchKeyDown = (event) => {
+        const suggestions = Array.from(suggestionsList.querySelectorAll('.suggestion-item'));
+        if (event.key === 'ArrowDown') {
+            event.preventDefault();
+            if (currentIndex < suggestions.length - 1) {
+                currentIndex++;
+                updateSuggestionFocus(suggestions);
+            }
+        } else if (event.key === 'ArrowUp') {
+            event.preventDefault();
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSuggestionFocus(suggestions);
+            }
+        } else if (event.key === 'Enter') {
+            event.preventDefault();
+            if (currentIndex >= 0 && currentIndex < suggestions.length) {
+                const selectedProductId = suggestions[currentIndex].dataset.id;
+                redirectToProductPage(parseInt(selectedProductId, 10));
+            }
+        }
+    };
+
+    // Update the focused suggestion in the dropdown
+    const updateSuggestionFocus = (suggestions) => {
+        suggestions.forEach((item, index) => {
+            item.classList.remove('highlight');
+            if (index === currentIndex) {
+                item.classList.add('highlight');
+                item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+    };
+
+    // Redirect the user to the appropriate product page based on the selected suggestion
+    const redirectToProductPage = (productId) => {
+        const product = listProducts.find(p => p.id === productId);
+        if (product) {
+            const categoryMapping = {
+                'householdSupplies': 'project-P2.html',
+                'bags': 'project-P3.html',
+                'cups': 'project-P4.html',
+                'lunchBox': 'project-P5.html',
+                'foodContainer': 'project-P6.html',
+                'other': 'project-P7.html'
+            };
+            const category = product.category;
+            const page = categoryMapping[category];
+            if (page) {
+                const url = new URL(page, window.location.origin);
+                url.hash = `item-${productId}`;
+                window.location.href = url.href;
+
+                window.addEventListener('load', () => {
+                    setTimeout(() => {
+                        const element = document.getElementById(`item-${productId}`);
+                        if (element) {
+                            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }, 500);
+                });
+            }
+        } else {
+            console.error('Product not found:', productId);
+        }
+    };
+
+    const initSearchBar = () => {
+        const storedProducts = localStorage.getItem('listProducts');
+        if (storedProducts) {
+            listProducts = JSON.parse(storedProducts);
+        } else {
+            fetchProducts();
+        }
+    };
+
+    // Event listeners for search bar functionality
+    searchBar.addEventListener('input', handleSearchInput);
+    searchBar.addEventListener('keydown', handleSearchKeyDown);
+
+    initSearchBar();
+});
+
+    </script>
     
 </body>
 </html>

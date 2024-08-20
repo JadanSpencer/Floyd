@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project-P2.css">
     <title>Household Supplies</title>
 </head>
+
 <body>
 
     <div class="containerX">
@@ -21,7 +23,7 @@
             </div>
 
             <div class="searchBar">
-                <input  id="search-bar" type="text" placeholder="What do you want?...">
+                <input id="search-bar" type="text" placeholder="What do you want?...">
                 <div id="suggestions" class="suggestions-list"></div>
             </div>
         </div>
@@ -30,6 +32,19 @@
 
     <div class="containerZ">
         <header>
+            <div class="menu">
+                <img src="menu-removebg-preview.png" alt="Menu" id="menuBtn">
+                <div class="dropdown" id="dropdownMenu">
+                    <a href="project-P3.html">Bags</a>
+                    <a href="project-P4.html">Cups</a>
+                    <a href="project-P5.html">Lunch Boxes</a>
+                    <a href="project-P6.html">Food Containers</a>
+                    <a href="project-P2.html">Household Items</a>
+                    <a href="project-P7.html">Other Items</a>
+                    <a href="project.html">Home</a>
+
+                </div>
+            </div>
             <div class="title">Household Supplies</div>
             <div class="icon-cart">
                 <img src="kil-removebg-preview.png" alt="Cart"><span class="num">0</span>
@@ -78,11 +93,28 @@
         </div>
     </div>
 
-    
-    <script src="project-P6.js"></script>
-   
 
-    
-    
+    <script src="project-P6.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menuBtn');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+
+            menuButton.addEventListener('click', () => {
+                dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+            });
+
+            window.addEventListener('click', (event) => {
+                if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+
+
+
 </body>
+
 </html>

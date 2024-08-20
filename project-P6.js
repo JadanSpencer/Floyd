@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const amount = document.querySelector('.icon-cart span');
     const searchBar = document.getElementById('search-bar');
     const suggestionsList = document.getElementById('suggestions');
+    const checkoutButton = document.querySelector('.checkout'); // Ensure this matches your HTML
     let listProducts = [];
     let carts = [];
     let currentIndex = -1;
@@ -22,8 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             listProducts = data;
             localStorage.setItem('listProducts', JSON.stringify(listProducts));
             updatePage();
-            console.log(data);
-            
+            console.log('Fetched Products:', data);
         } catch (error) {
             console.error('Error fetching product data:', error);
         }
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const updateCartHtml = () => {
-         console.log('Updating cart HTML list');
+        console.log('Updating cart HTML list');
         listCartHtml.innerHTML = '';
         let totalQuantity = 0;
         let totalPrice = 0;
@@ -112,6 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 `;
                 listCartHtml.appendChild(newCartItem);
+            } else {
+                console.error('Product not found in listProducts:', cart.product_id);
             }
         });
 
@@ -132,6 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             updateCartHtml();
             localStorage.setItem('cart', JSON.stringify(carts));
+        } else {
+            console.error('Cart item not found:', productId);
         }
     };
 
@@ -221,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const url = new URL(page, window.location.origin);
                 url.hash = `item-${productId}`;
                 window.location.href = url.href;
-                
+
                 window.addEventListener('load', () => {
                     setTimeout(() => {
                         const element = document.getElementById(`item-${productId}`);
@@ -231,38 +235,31 @@ document.addEventListener('DOMContentLoaded', () => {
                     }, 500);
                 });
             }
+        } else {
+            console.error('Product not found:', productId);
         }
     };
 
     const handleCartButtonClick = (event) => {
         if (event.target.classList.contains('addCart')) {
             const productId = event.target.parentElement.dataset.id;
-            debugger;
-            addToCart(productId);
+            console.log('Add to Cart button clicked, Product ID:', productId);
+            addToCart(parseInt(productId, 10));
         }
     };
 
     const handleCartQuantityChangeClick = (event) => {
         if (event.target.classList.contains('minus') || event.target.classList.contains('plus')) {
             const productId = event.target.parentElement.parentElement.dataset.id;
-            const type = event.target.classList.contains('plus') ? 'plus' : 'minus';
-            handleCartQuantityChange(productId, type);
+            const type = event.target.classList.contains('minus') ? 'minus' : 'plus';
+            console.log('Cart Quantity Change:', type, 'Product ID:', productId);
+            handleCartQuantityChange(parseInt(productId, 10), type);
         }
     };
 
     const handleCheckoutClick = () => {
-        window.location.href = 'project-D.html';
+        window.location.href = 'project-D.html'; // Redirect to delivery page
     };
-
-    searchBar.addEventListener('input', handleSearchInput);
-    searchBar.addEventListener('keydown', handleSearchKeyDown);
-    listProductHTML.addEventListener('click', handleCartButtonClick);
-    listCartHtml.addEventListener('click', handleCartQuantityChangeClick);
-
-    const checkoutBtn = document.getElementById('checkoutBtn');
-    if (checkoutBtn) {
-        checkoutBtn.addEventListener('click', handleCheckoutClick);
-    }
 
     const initApp = () => {
         const storedProducts = localStorage.getItem('listProducts');
@@ -273,6 +270,12 @@ document.addEventListener('DOMContentLoaded', () => {
             fetchProducts();
         }
     };
+
+    searchBar.addEventListener('input', handleSearchInput);
+    searchBar.addEventListener('keydown', handleSearchKeyDown);
+    listProductHTML.addEventListener('click', handleCartButtonClick);
+    listCartHtml.addEventListener('click', handleCartQuantityChangeClick);
+    checkoutButton.addEventListener('click', handleCheckoutClick); // Ensure this matches your HTML
 
     initApp();
 });

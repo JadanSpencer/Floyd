@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project-D.css">
     <title>Delivery Page</title>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 </head>
+
 <body>
     <div class="biz">
         <h1>Floyds Distributors</h1>
@@ -18,7 +19,9 @@
     <div class="parishes1">
         <!-- Parish images with IDs -->
         <img class="p1" id="man" src="man-removebg-preview.png" alt="Manchester">
-        <img class="p2" id="st-james" src="saint-james-parish-map-administrative-division-jamaica-vector-illustration_601298-26453-removebg-preview.png" alt="St James">
+        <img class="p2" id="st-james"
+            src="saint-james-parish-map-administrative-division-jamaica-vector-illustration_601298-26453-removebg-preview.png"
+            alt="St James">
         <img class="p3" id="trelawney" src="trelawney-removebg-preview.png" alt="Trelawney">
         <img class="p4" id="st-mary" src="mary-removebg-preview.png" alt="St Mary">
         <img class="p5" id="st-catherine" src="cath-removebg-preview.png" alt="St Catherine">
@@ -69,81 +72,82 @@
     </div>
 
     <script>
-       document.addEventListener('DOMContentLoaded', () => {
-    const parishImages = document.querySelectorAll('.parishes1 img');
-    const deliveryFormContainer = document.getElementById('deliveryFormContainer');
-    const parishInput = document.getElementById('parish');
-    const closeFormButton = document.getElementById('closeForm');
+        document.addEventListener('DOMContentLoaded', () => {
+            const parishImages = document.querySelectorAll('.parishes1 img');
+            const deliveryFormContainer = document.getElementById('deliveryFormContainer');
+            const parishInput = document.getElementById('parish');
+            const closeFormButton = document.getElementById('closeForm');
 
-    // Initialize EmailJS
-    emailjs.init("KrH-tjX0gnZQ8qbEf"); // Use the correct Product Key here
+            // Initialize EmailJS
+            emailjs.init("KrH-tjX0gnZQ8qbEf"); // Use the correct Product Key here
 
-    parishImages.forEach(img => { 
-        img.addEventListener('click', () => {
-            deliveryFormContainer.style.display = 'flex';
-            parishInput.value = img.alt;
-        });
-    });
-
-    closeFormButton.addEventListener('click', () => {
-        deliveryFormContainer.style.display = 'none';
-    });
-
-    document.getElementById('deliveryForm').addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        const parish = document.getElementById('parish').value;
-        const address = document.getElementById('address').value;
-        const contact = document.getElementById('contact').value;
-        const business = document.getElementById('business').value;
-        const email = document.getElementById('email').value;
-
-        const carts = JSON.parse(localStorage.getItem('cart')) || [];
-        const listProducts = JSON.parse(localStorage.getItem('listProducts')) || [];
-        
-        const items = carts.map(cart => {
-            const product = listProducts.find(p => p.id == cart.product_id);
-            return {
-                name: product ? product.name : 'Unknown',
-                quantity: cart.quantity,
-                price: (product ? product.price * cart.quantity : 0).toFixed(2)
-            };
-        });
-
-        const totalPrice = items.reduce((acc, item) => acc + parseFloat(item.price), 0).toFixed(2);
-
-        // Format receipt with line breaks for each item
-        const receipt = `<pre>${items.map(item => 
-            `${item.name} - $${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`
-        ).join('\n')}\nTotal Price: $${totalPrice}</pre>`;
-
-        if (parish && address && contact && business && email) {
-            emailjs.send('service_p5zoxqp', 'template_wzk00vd', {
-                parish: parish,
-                address: address,
-                contact: contact,
-                business: business,
-                email: email,
-                receipt: receipt,
-                totalPrice: totalPrice
-            }).then(function(response) {
-                console.log('Success:', response);
-                alert('Your order has been placed successfully!');
-                document.getElementById('deliveryForm').reset();
-                deliveryFormContainer.style.display = 'none';
-                localStorage.removeItem('cart');
-            }, function(error) {
-                console.error('Error:', error);
-                alert('There was a problem placing your order.');
+            parishImages.forEach(img => {
+                img.addEventListener('click', () => {
+                    deliveryFormContainer.style.display = 'flex';
+                    parishInput.value = img.alt;
+                });
             });
-        } else {
-            alert('Please fill in all fields.');
-        }
-    });
-});
+
+            closeFormButton.addEventListener('click', () => {
+                deliveryFormContainer.style.display = 'none';
+            });
+
+            document.getElementById('deliveryForm').addEventListener('submit', (event) => {
+                event.preventDefault();
+
+                const parish = document.getElementById('parish').value;
+                const address = document.getElementById('address').value;
+                const contact = document.getElementById('contact').value;
+                const business = document.getElementById('business').value;
+                const email = document.getElementById('email').value;
+
+                const carts = JSON.parse(localStorage.getItem('cart')) || [];
+                const listProducts = JSON.parse(localStorage.getItem('listProducts')) || [];
+
+                const items = carts.map(cart => {
+                    const product = listProducts.find(p => p.id == cart.product_id);
+                    return {
+                        name: product ? product.name : 'Unknown',
+                        quantity: cart.quantity,
+                        price: (product ? product.price * cart.quantity : 0).toFixed(2)
+                    };
+                });
+
+                const totalPrice = items.reduce((acc, item) => acc + parseFloat(item.price), 0).toFixed(2);
+
+                // Format receipt with line breaks for each item
+                const receipt = `<pre>${items.map(item =>
+                    `${item.name} - $${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`
+                ).join('\n')}\nTotal Price: $${totalPrice}</pre>`;
+
+                if (parish && address && contact && business && email) {
+                    emailjs.send('service_p5zoxqp', 'template_wzk00vd', {
+                        parish: parish,
+                        address: address,
+                        contact: contact,
+                        business: business,
+                        email: email,
+                        receipt: receipt,
+                        totalPrice: totalPrice
+                    }).then(function (response) {
+                        console.log('Success:', response);
+                        alert('Your order has been placed successfully!');
+                        document.getElementById('deliveryForm').reset();
+                        deliveryFormContainer.style.display = 'none';
+                        localStorage.removeItem('cart');
+                    }, function (error) {
+                        console.error('Error:', error);
+                        alert('There was a problem placing your order.');
+                    });
+                } else {
+                    alert('Please fill in all fields.');
+                }
+            });
+        });
 
 
 
     </script>
 </body>
+
 </html>
