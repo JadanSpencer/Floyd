@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const addToCart = (productId) => {
+        console.log('Adding item to cart:', productId);
         const existingProduct = carts.find(cart => cart.product_id === productId);
         if (existingProduct) {
             existingProduct.quantity += 1;
@@ -85,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const updateCartHtml = () => {
+         console.log('Updating cart HTML list');
         listCartHtml.innerHTML = '';
         let totalQuantity = 0;
         let totalPrice = 0;
@@ -235,6 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const handleCartButtonClick = (event) => {
         if (event.target.classList.contains('addCart')) {
             const productId = event.target.parentElement.dataset.id;
+            debugger;
             addToCart(productId);
         }
     };
