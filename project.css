@@ -2070,6 +2070,15 @@
             z-index: 10;
         }
 
+        .rectangle3 .glider-contain {
+            top: 100px;
+            z-index: 5;
+            overflow: hidden;
+            position: absolute;
+        }
+
+
+
         .rectangleBeta {
             position: absolute;
             width: 100%;
@@ -2093,9 +2102,20 @@
             }
         }
 
+        .rectangle02 {
+            position: absolute;
+            width: 100%;
+            height: 900px;
+            background-color: white;
+            top: 1500px;
+        }
+
 
         .rectangle3 .sect {
-            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            visibility: visible;
+            z-index: 6;
         }
 
         .line1 {
@@ -2115,92 +2135,232 @@
         }
 
         .heading1 {
-            visibility: hidden;
+            position: absolute;
+            font-family: long;
+            margin-top: 870px;
+            margin-left: 175px;
+            color: rgb(12, 151, 133);
+            visibility: visible;
+            z-index: 10;
         }
 
         .lower1 {
-            visibility: hidden;
+            position: absolute;
+            margin-left: 107px;
+            color: rgb(22, 153, 114);
+            visibility: visible;
+            margin-top: 920px;
+            z-index: 10;
         }
 
         .icon1 {
-            visibility: hidden;
+            filter: brightness(0.13) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
+            scale: 0.15;
+            position: absolute;
+            margin-left: -320px;
+            position: absolute;
+            visibility: visible;
+            margin-top: 635px;
+            z-index: 10;
         }
 
         .heading2 {
-            visibility: hidden;
+            position: absolute;
+            font-family: long;
+            margin-top: 1000px;
+            margin-left: 175px;
+            color: rgb(12, 151, 133);
+            visibility: visible;
+            z-index: 10;
         }
 
         .lower2 {
-            visibility: hidden;
+            position: absolute;
+            margin-left: 117px;
+            color: rgb(22, 153, 114);
+            visibility: visible;
+            margin-top: 1055px;
+            z-index: 10;
         }
 
         .icon2 {
-            visibility: hidden;
+            filter: brightness(0.13) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
+            scale: 0.13;
+            position: absolute;
+            margin-left: -330px;
+            position: absolute;
+            visibility: visible;
+            margin-top: 760px;
+            z-index: 10;
         }
 
+
+
         .heading3 {
-            visibility: hidden;
+            position: absolute;
+            font-family: long;
+            margin-top: 1130px;
+            margin-left: 155px;
+            color: rgb(12, 151, 133);
+            visibility: visible;
+            z-index: 10;
         }
 
         .lower3 {
-            visibility: hidden;
+            position: absolute;
+            margin-left: 127px;
+            color: rgb(22, 153, 114);
+            visibility: visible;
+            margin-top: 1185px;
+            z-index: 10;
         }
 
         .icon3 {
-            visibility: hidden;
+            filter: brightness(0.13) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
+            scale: 0.12;
+            position: absolute;
+            margin-left: -350px;
+            position: absolute;
+            visibility: visible;
+            margin-top: 900px;
+            z-index: 10;
         }
 
         .heading4 {
-            visibility: hidden;
+            position: absolute;
+            font-family: long;
+            margin-top: 1280px;
+            margin-left: 150px;
+            color: rgb(12, 151, 133);
+            visibility: visible;
+            z-index: 10;
         }
 
         .lower4 {
-            visibility: hidden;
+            position: absolute;
+            margin-left: 147px;
+            color: rgb(22, 153, 114);
+            visibility: visible;
+            margin-top: 1335px;
+            z-index: 10;
         }
 
         .icon4 {
-            visibility: hidden;
+            filter: brightness(0.13) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
+            scale: 0.12;
+            position: absolute;
+            margin-left: -360px;
+            position: absolute;
+            visibility: visible;
+            margin-top: 1050px;
+            z-index: 10;
         }
 
         .heading5 {
-            visibility: hidden;
+            position: absolute;
+            font-family: long;
+            margin-top: 1430px;
+            margin-left: 180px;
+            color: rgb(12, 151, 133);
+            visibility: visible;
+            z-index: 10;
         }
 
         .lower5 {
-            visibility: hidden;
+            position: absolute;
+            margin-left: 107px;
+            color: rgb(22, 153, 114);
+            visibility: visible;
+            margin-top: 1485px;
+            z-index: 10;
         }
 
         .icon5 {
-            visibility: hidden;
+            filter: brightness(0.13) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
+            scale: 0.13;
+            position: absolute;
+            margin-left: -330px;
+            position: absolute;
+            visibility: visible;
+            margin-top: 1200px;
+            z-index: 10;
+            transform: rotate(15deg);
+        }
+
+        .rectangleAlpha {
+            width: 0;
+            height: 0;
+            border-left: 200px solid transparent;
+            border-right: 200px solid transparent;
+            border-bottom: 300px solid #fff;
+            /* Change color as needed */
+            position: absolute;
+            transform: rotate(180deg);
+            top: 2400px;
+        }
+
+        .rectangleDelta {
+            position: absolute;
+            width: 100%;
+            height: 700px;
+            background-color: teal;
+            margin-top: 4570px;
+            z-index: -1;
         }
 
 
         .productBox {
+            background: linear-gradient(rgb(3, 41, 41, 0.7), rgb(6, 65, 65, 0.7));
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 40px 20px;
+            position: relative;
+            box-shadow: 2px 4px 20px rgb(2, 172, 172);
             visibility: visible;
+            overflow: hidden;
         }
 
         .imgContainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
             visibility: visible;
         }
 
         .pImg a,
         .pImg {
+            width: 100%;
+            height: 300px;
+            display: flex;
             visibility: visible;
         }
 
         .pImg a img {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: contain;
+            animation: fade 0.6s;
+            filter: drop-shadow(0 50px 20px black);
             visibility: visible;
         }
 
         .imgB {
+            display: none;
             visibility: visible;
         }
 
         .imgContainer:hover .imgB {
+            display: block;
             visibility: visible;
         }
 
         .imgContainer:hover .imgA {
+            display: none;
             visibility: visible;
         }
 
@@ -2215,44 +2375,98 @@
         }
 
         .boxText {
+            width: 100%;
+            margin-top: 5px;
             visibility: visible;
         }
 
         .productCategory {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            color: white;
+            font-weight: 600;
+            font-size: 30px;
+            font-family: sugar;
             visibility: visible;
         }
 
         .productCategory .span {
+            color: gray;
+            font-size: 0.9rem;
+            margin: 5px 0px;
             visibility: visible;
         }
 
         .titleP {
+            color: teal;
+            font-weight: 600;
+            text-decoration: none;
+            font-family: gunplay;
             visibility: visible;
         }
 
         .titleP:hover {
+            color: black;
+            opacity: 0.7;
+            transition: all ease 0.3s;
             visibility: visible;
         }
 
         .price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+            font-family: dealer;
             visibility: visible;
         }
 
         .price .priceA {
+            font-size: 1.3rem;
+            color: white;
+            font-weight: 700;
             visibility: visible;
         }
 
         .price .butBtn {
+            color: teal;
+            margin: 0px 5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: ease-in-out 0.2s;
+            font-family: bavex;
+            background: rgb(2, 31, 31);
+            width: 70px;
+            text-align: center;
+            padding: 10px;
+            border: solid 1px white;
             visibility: visible;
         }
 
         .price .butBtn:hover {
+            color: rgb(200, 228, 228);
+            font-size: 17px;
             visibility: visible;
 
         }
 
         .discounts {
-            visibility: visible;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 65px;
+            height: 65px;
+            color: white;
+            font-weight: 100;
+            background-color: teal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            z-index: 10;
+            border-radius: 50%;
         }
 
         .rectangle4 {
@@ -2336,91 +2550,151 @@
             visibility: hidden;
         }
 
+
         .rectangle03 {
-            visibility: hidden;
+            position: absolute;
+            width: 100%;
+            height: 1210px;
+            background: #575454;
+            margin-top: 5050px;
+            padding-top: 50px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         .rectangle03 .footer .container01 {
-            visibility: hidden;
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-row: repeat(2, 1fr);
+            gap: 150px;
+            justify-content: center;
+            margin-left: 100px;
+        }
+
+        .rectangle03 .footer .container01 .newbie {
+            color: teal;
+            font-family: long;
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .rectangle03 .footer .container01 .newbie span {
+            position: absolute;
+            font-family: bake;
+            top: 80px;
+            font-size: 38px;
+            color: rgb(45, 187, 187);
+            margin-left: -130px;
         }
 
         .rectangle03 .footer {
-            visibility: hidden;
+            width: 100%;
+            margin-left: -100px;
+            position: absolute;
         }
 
         .rectangle03 .footer h3 {
-            visibility: hidden;
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: center;
+            color: rgb(48, 185, 185);
         }
 
         .rectangle03 .container01 .footer .footer-content p {
-            visibility: hidden;
+            width: 100px;
+            margin: auto;
+            padding: 7px;
+            font-size: 25px;
         }
 
         .footer-content ul {
-            visibility: hidden;
+            text-align: center;
+            list-style: none;
+            font-size: 25px;
         }
 
         .footer-content ul li a {
-            visibility: hidden;
+            color: white;
+            font-size: 25px;
         }
 
         .footer-content p {
-            visibility: hidden;
+            color: white;
+            padding: 7px;
+            font-size: 25px;
         }
 
         .list {
-            visibility: hidden;
+            padding: 0;
+            font-weight: 500;
         }
 
         .list li {
-            visibility: hidden;
+            width: auto;
+            text-align: center;
+            list-style-type: none;
+            padding: 5px;
+            position: relative;
         }
 
         .list li::before {
-            visibility: hidden;
+            content: '';
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 100%;
+            width: 0;
+            height: 2px;
+            background: rgb(1, 80, 80);
+            transition-duration: .5s;
         }
 
         .list li:hover::before {
-            visibility: hidden;
+            width: 70px;
         }
 
         .social-links {
-            visibility: hidden;
+            padding: 19px;
+            color: teal;
+            transform: scale(1.7);
+            display: flex;
+            margin-left: 150px;
+            gap: 20px;
         }
 
         a {
-            visibility: hidden;
+            text-decoration: none;
         }
 
         a:hover {
-            visibility: hidden;
+            color: rgb(6, 151, 151);
         }
 
         .social-links :hover {
-            visibility: hidden;
+            color: rgb(1, 80, 80);
+            transition: ease-in-out 0.3s;
+            transform: scale(1.1);
         }
 
         .bottomBar {
-            visibility: hidden;
+            position: absolute;
+            background: transparent;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+            margin-left: 250px;
+            color: white;
+            width: 60%;
         }
 
         .bottomBar p {
-            visibility: hidden;
+            color: white;
+            font-size: 10px;
+            padding: 13px;
+            margin-left: -110px;
+
         }
 
-        .suggestions-list {
-            visibility: hidden;
-        }
-
-        .suggestions-list div {
-            visibility: hidden;
-        }
-
-        .suggestions-list div:hover {
-            visibility: hidden;
-        }
-
-        .highlight {
-            visibility: hidden;
-        }
     }
