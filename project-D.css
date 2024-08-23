@@ -270,6 +270,7 @@ body {
     /* Semi-transparent background */
     z-index: 1000;
     /* Ensure the form is on top of other content */
+    visibility: visible;
 }
 
 .delivery-form {

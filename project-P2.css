@@ -416,6 +416,15 @@ body.showCart .containerZ {
 }
 
 @media screen and (max-width: 412px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     .containerX .searchBar {
         height: 27px;
         display: flex;
@@ -479,7 +488,7 @@ body.showCart .containerZ {
         width: 412px;
         /* Adjust the width as needed */
         position: fixed;
-        inset: 0 370px 0 auto;
+        inset: 0 415px 0 auto;
         /* Adjust inset to ensure it's visible */
         display: grid;
         grid-template-rows: 70px 1fr 70px;
@@ -494,4 +503,16 @@ body.showCart .containerZ {
         transition: inset .9s ease-in-out;
         /* Slide in from the right for smaller screens */
     }
+}
+
+@media screen and (max-width: 390px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
 }

@@ -85,8 +85,8 @@
     },
     {
         "id": 83,
-        "name": "21x30 poly",
-        "price": 120,
+        "name": "21x30 poly (case 50*4)",
+        "price": 7500,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
@@ -260,15 +260,36 @@
     },
     {
         "id": 31,
-        "name": "24oz Paper Cup (case 50x20)",
-        "price": 310,
+        "name": "24oz Paper Cup (case 25x20)",
+        "price": 11327.50,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 111,
+        "name": "24oz Cup Lid (case 25x20)",
+        "price": 5875,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 105,
-        "name": "1oz Portion Cup (case 50x40)",
+        "name": "1oz Portion Cup (case 25x100)",
         "price": 8162.70,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 106,
+        "name": "1oz Portion Cup w/lid(case 50x40)",
+        "price": 8125.00,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 112,
+        "name": "2oz Portion Cup (case 20x50)",
+        "price": 6521.73,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "cups"
     },
@@ -295,8 +316,15 @@
     },
     {
         "id": 35,
-        "name": "2 Compartment Lunch Box",
-        "price": 350,
+        "name": "2 Compartment Box Bagasse (50*4)",
+        "price": 8125,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "lunchBox"
+    },
+    {
+        "id": 107,
+        "name": "2 Compartment Plastic (50*4)",
+        "price": 3913.04,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "lunchBox"
     },
@@ -316,22 +344,22 @@
     },
     {
         "id": 38,
-        "name": "Kraft #1 Lunch Box",
-        "price": 380,
+        "name": "Kraft 26oz Box (50*4)",
+        "price": 6875,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "lunchBox"
     },
     {
         "id": 39,
-        "name": "Kraft #2 Lunch Box",
-        "price": 390,
+        "name": "Kraft 450z Box (50*4)",
+        "price": 9625,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "lunchBox"
     },
     {
         "id": 40,
-        "name": "Kraft #4 Lunch Box",
-        "price": 400,
+        "name": "Kraft 66oz Box (50*4)",
+        "price": 10100,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "lunchBox"
     },
@@ -344,7 +372,7 @@
     },
     {
         "id": 42,
-        "name": "3 Compartment Lunch Box",
+        "name": "3 Compartment Box (50*4)",
         "price": 380,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "lunchBox"
@@ -444,6 +472,20 @@
         "id": 98,
         "name": "1.5lb Aluminum Pan Lid",
         "price": 3206.52,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 109,
+        "name": "2.25lb Aluminum Pan",
+        "price": 13904.35,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 110,
+        "name": "2.25lb Aluminum Pan Lid",
+        "price": 5200,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "foodContainer"
     },
@@ -729,8 +771,8 @@
     },
     {
         "id": 93,
-        "name": "Thermal Rolls",
-        "price": 930,
+        "name": "Thermal Rolls (50 rolls)",
+        "price": 11125,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other"
     },
@@ -738,6 +780,13 @@
         "id": 94,
         "name": "18*1500 Palette Wrap",
         "price": 12521.80,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "other"
+    },
+    {
+        "id": 108,
+        "name": "2 Wheel Trolley",
+        "price": 17391.30,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other"
     }
