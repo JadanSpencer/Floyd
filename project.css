@@ -1795,7 +1795,7 @@
 ////PhoneScreen/////////////////////////////////////////////////////////////////////////////////////*/
 
 
-    @media screen and (max-width:412px) {
+    @media screen and (max-width:320px) {
 
 
 
@@ -1818,6 +1818,7 @@
         .section1 {
             margin-left: 348px;
             width: max(600px, 90%);
+            margin-top: 19rem;
         }
 
         .section1 .companyTitle {
@@ -1826,14 +1827,14 @@
             font-family: long;
             margin-top: -25rem;
             color: rgb(17, 216, 216);
-            margin-left: -17rem;
+            margin-left: -18rem;
         }
 
         .section1 .companyTitle1 {
             position: absolute;
-            font-size: 40px;
+            font-size: 30px;
             font-family: bake;
-            margin-left: -19.8rem;
+            margin-left: -18.4rem;
             margin-top: -21rem;
             color: rgb(2, 172, 172);
             font-weight: 100;
@@ -1848,7 +1849,7 @@
             position: absolute;
             height: 110px;
             background: rgb(0, 109, 109);
-            margin-left: -21.75rem;
+            margin-left: -20.85rem;
             top: 9rem;
         }
 
@@ -1856,13 +1857,13 @@
             position: absolute;
             margin-top: -16rem;
             display: flex;
-            margin-left: -20rem;
+            margin-left: -20.3rem;
         }
 
         .section1 .navbar a {
             padding: 0 0.9rem;
             text-decoration: underline;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 200;
             font-family: sugar;
             color: whitesmoke;
@@ -1908,8 +1909,8 @@
             scale: 0.5;
             position: absolute;
             top: 4rem;
-            left: 28rem;
-            filter: drop-shadow(0 50px 100px teal);
+            left: 26rem;
+            filter: drop-shadow(0 50px 100px rgb(117, 224, 224));
         }
 
         .shopBtn {
@@ -1943,7 +1944,7 @@
             font-weight: 800;
             background: #1c7e6d;
             margin-left: -16rem;
-            margin-top: 13rem;
+            margin-top: 12rem;
             width: 160px;
             padding: 15px;
             text-align: center;
@@ -1961,12 +1962,13 @@
         }
 
         .why {
+            width: 100%;
             color: white;
             font-family: long;
-            font-size: 43px;
+            font-size: 50px;
             position: absolute;
             top: -18rem;
-            left: 13rem;
+            left: 7.5rem;
         }
 
         .line1,
@@ -1981,9 +1983,16 @@
         }
 
         .heading1 {
+            width: 100%;
             position: absolute;
-            top: -10rem;
-            left: 8rem;
+            top: -9rem;
+            left: 4.5rem;
+            font-family: sugar;
+        }
+
+        .icon1 {
+            top: -9rem;
+            left: 9rem;
         }
 
     }

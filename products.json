@@ -176,22 +176,57 @@
     },
     {
         "id": 25,
-        "name": "7oz Plastic Cup (case 50x20)",
-        "price": 250,
+        "name": "7oz Plastic Cup (case 48x50)",
+        "price": 8229.34,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 16,
+        "name": "7oz Coloured Cup (case 50x50)",
+        "price": 4875,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 26,
         "name": "8oz Paper Cup (case 50x20)",
-        "price": 260,
+        "price": 8369,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 112,
+        "name": "8oz Cup Lid (case 50x20)",
+        "price": 5300,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 117,
+        "name": "8oz Ripple Cup (case 25x20)",
+        "price": 9130.44,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 118,
+        "name": "8oz Ripple Cup Lid (case 50x20)",
+        "price": 9130.44,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 27,
-        "name": "9oz Plastic Cup (case 50x20)",
-        "price": 270,
+        "name": "9oz Plastic Cup (case 20x50)",
+        "price": 5217.39,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 119,
+        "name": "9/12oz Dome Lid(case 50x20)",
+        "price": 9187.50,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "cups"
     },
@@ -273,6 +308,20 @@
         "category": "cups"
     },
     {
+        "id": 32,
+        "name": "32oz Paper Bowl&Lid (case 50x20)",
+        "price": 13500,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 113,
+        "name": "32oz Cup Lid (case 20x25)",
+        "price": 7605,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
         "id": 105,
         "name": "1oz Portion Cup (case 25x100)",
         "price": 8162.70,
@@ -294,9 +343,23 @@
         "category": "cups"
     },
     {
-        "id": 32,
-        "name": "32oz Paper Cup (case 50x20)",
-        "price": 320,
+        "id": 114,
+        "name": "3oz Portion Cup w/lid (case 20x50)",
+        "price": 8750,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 115,
+        "name": "4oz Portion Cup (case 20x125)",
+        "price": 9988,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "cups"
+    },
+    {
+        "id": 115,
+        "name": "4oz Portion Cup Lid(case 20x125)",
+        "price": 7650,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "cups"
     },
@@ -373,7 +436,7 @@
     {
         "id": 42,
         "name": "3 Compartment Box (50*4)",
-        "price": 380,
+        "price": 5750,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "lunchBox"
     },
@@ -554,8 +617,22 @@
     },
     {
         "id": 62,
-        "name": "Weave Hand-Towel",
-        "price": 620,
+        "name": "Weave Hand-Towel (25 rolls)",
+        "price": 6306.25,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "householdSupplies"
+    },
+    {
+        "id": 120,
+        "name": "Weave Luncheon Napkin (18*100)",
+        "price": 4000,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "householdSupplies"
+    },
+    {
+        "id": 121,
+        "name": "Weave 280 sht Tissue (24rolls)",
+        "price": 1875,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
@@ -666,14 +743,14 @@
     },
     {
         "id": 78,
-        "name": "18litre/5gal Bin",
+        "name": "18L Bin",
         "price": 3200,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
         "id": 79,
-        "name": "120litre Bin",
+        "name": "30L Bin",
         "price": 790,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
