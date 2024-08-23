@@ -1795,7 +1795,7 @@
 ////PhoneScreen/////////////////////////////////////////////////////////////////////////////////////*/
 
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:412px) {
 
 
 
@@ -1810,8 +1810,6 @@
         body {
             position: relative;
             max-width: 100%;
-            margin: auto;
-            padding: 0;
             /* Converted px to rem, but was 0 */
             background: radial-gradient(circle, teal, rgb(2, 31, 31));
             text-align: center;
