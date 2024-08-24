@@ -1825,7 +1825,7 @@
             position: absolute;
             font-size: 60px;
             font-family: long;
-            margin-top: -35rem;
+            margin-top: -30rem;
             color: rgb(17, 216, 216);
             margin-left: -17rem;
         }
@@ -1835,7 +1835,7 @@
             font-size: 30px;
             font-family: bake;
             margin-left: -17.4rem;
-            margin-top: -30rem;
+            margin-top: -25rem;
             color: rgb(2, 172, 172);
             font-weight: 100;
         }
@@ -1850,14 +1850,14 @@
             height: 70px;
             background: rgb(0, 109, 109);
             margin-left: -21.85rem;
-            top: 9rem;
+            top: 13rem;
         }
 
         .section1 .navbar {
             position: absolute;
-            margin-top: -16rem;
+            margin-top: -21.5rem;
             display: flex;
-            margin-left: -20.3rem;
+            margin-left: -21.3rem;
         }
 
         .section1 .navbar a {
@@ -1879,7 +1879,7 @@
             display: flex;
             cursor: pointer;
             padding: 7px 180px;
-            margin-top: -8rem;
+            margin-top: -19rem;
             margin-left: -23rem;
             border-radius: 50px;
             background: rgb(169, 218, 218);
