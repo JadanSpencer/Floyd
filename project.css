@@ -1908,8 +1908,8 @@
         .images .paperBags {
             scale: 0.5;
             position: absolute;
-            top: 4rem;
-            left: 26rem;
+            top: 5rem;
+            left: 28rem;
             filter: drop-shadow(0 50px 100px rgb(117, 224, 224));
         }
 
@@ -1920,7 +1920,7 @@
             font-weight: 800;
             background: #b1e2dc;
             margin-left: -16rem;
-            margin-top: 8rem;
+            margin-top: 4rem;
             width: 160px;
             padding: 15px;
             text-align: center;
@@ -1944,7 +1944,7 @@
             font-weight: 800;
             background: #1c7e6d;
             margin-left: -16rem;
-            margin-top: 12rem;
+            margin-top: 8rem;
             width: 160px;
             padding: 15px;
             text-align: center;
@@ -1994,5 +1994,56 @@
             top: -9rem;
             left: 9rem;
         }
+
+    }
+
+    @media screen and (max-width:430px) {
+
+        html,
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            max-width: 100%;
+            /* Converted px to rem, but was 0 */
+            background: radial-gradient(circle, teal, rgb(2, 31, 31));
+            text-align: center;
+        }
+
+        .circle1,
+        .circle2,
+        .circle3,
+        .circle4,
+        .boxTitles,
+        .borderImg {
+            display: none;
+        }
+
+        .section1 .companyTitle {
+            font-size: 80px;
+            margin-left: -21rem;
+        }
+
+        .section1 .companyTitle1 {
+            font-size: 38px;
+            margin-left: -22rem;
+        }
+
+        .section1 .rectangleIchi {
+            width: 45rem;
+            position: absolute;
+            height: 70px;
+            background: rgb(0, 109, 109);
+            margin-left: -21.7rem;
+            top: 19rem;
+
+        }
+
+
 
     }
