@@ -1997,7 +1997,7 @@
 
     }
 
-    @media screen and (max-width:430px) {
+    @media screen and (max-width:600px) {
 
         html,
         body {
@@ -2026,12 +2026,12 @@
 
         .section1 .companyTitle {
             font-size: 80px;
-            margin-left: -21rem;
+            margin-left: -19.3rem;
         }
 
         .section1 .companyTitle1 {
             font-size: 38px;
-            margin-left: -22rem;
+            margin-left: -19.5rem;
         }
 
         .section1 .rectangleIchi {
