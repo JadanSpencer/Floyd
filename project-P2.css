@@ -285,6 +285,7 @@ header .icon-cart span {
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s ease-in-out;
+
 }
 
 .cartTab .totalPriceContainer {
@@ -495,7 +496,7 @@ body.showCart .containerZ {
         display: grid;
         grid-template-rows: 70px 1fr 70px;
         transition: inset .9s ease-in-out;
-        height: 715px;
+        height: 615px;
         /* Ensure it takes up full height */
     }
 
