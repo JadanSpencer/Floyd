@@ -174,12 +174,11 @@ body {
 .dropdown {
     display: none;
     position: absolute;
-    background-color: rgb(0, 128, 128, 0.5);
+    background-color: rgb(0, 128, 128, 0.7);
     backdrop-filter: blur(15px);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-
 }
 
 .dropdown a {
@@ -410,13 +409,11 @@ body.showCart .containerZ {
 .highlight {
     background-color: rgb(155, 228, 205);
     ;
-    /* Choose your desired color */
     transition: background-color 0.3s ease;
-    /* Smooth transition */
     color: teal;
 }
 
-@media screen and (max-width: 432px) {
+/*@media screen and (max-width: 430px) {
 
     html,
     body {
@@ -439,6 +436,22 @@ body.showCart .containerZ {
         width: 50px;
         margin-top: -63px;
         margin-left: 30px;
+    }
+
+    .searchBar input {
+        margin-left: -200px;
+    }
+
+    ::placeholder {
+        color: white;
+        opacity: 0.7;
+    }
+
+    .suggestions-list {
+        width: 76%;
+        top: 171px;
+        left: 50px;
+        position: absolute;
     }
 
     .containerX .rectangleTopBar .navbar {
@@ -489,23 +502,307 @@ body.showCart .containerZ {
 
     .cartTab {
         width: 100%;
-        /* Adjust the width as needed */
         position: fixed;
         inset: 0 430px 0 auto;
-        /* Adjust inset to ensure it's visible */
         display: grid;
         grid-template-rows: 70px 1fr 70px;
         transition: inset .9s ease-in-out;
-        height: 615px;
-        /* Ensure it takes up full height */
+        height: 100%;
     }
 
 
     body.showCart .cartTab {
         inset: 0 0 0 0;
         transition: inset .9s ease-in-out;
-        /* Slide in from the right for smaller screens */
+
     }
+}*/
+
+
+@media screen and (max-width: 430px) {
+
+
+    html,
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    .containerX .searchBar {
+        margin-top: -64px;
+        width: 180px;
+        margin-left: 25px;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    .suggestions-list {
+        width: 78%;
+        left: 50px;
+    }
+
+    .icon-cart img {
+        left: -140px;
+        top: -110px;
+    }
+
+    .icon-cart .num {
+        left: -44px;
+        top: -16px;
+    }
+
+    .menu img {
+        position: relative;
+        left: -90px;
+        top: 5px;
+        z-index: 5;
+    }
+
+    .title {
+        margin-left: -220px;
+    }
+
+    .listProduct {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dropdown {
+        margin-top: -16rem;
+        z-index: 6;
+
+    }
+
+    .cartTab {
+        width: 100%;
+        height: 100%;
+        inset: 0 -434px 0 auto;
+    }
+
+    .cartTab .listCart .item {
+        grid-template-columns: 100px 160px 60px 1fr;
+    }
+
 }
 
-@media screen and (max-width: 390px) {}
+@media screen and (max-width: 412px) {
+
+
+    html,
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    .containerX .searchBar {
+        margin-top: -64px;
+        width: 180px;
+        margin-left: 17px;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    .suggestions-list {
+        width: 78%;
+        left: 50px;
+    }
+
+    .icon-cart img {
+        left: -140px;
+        top: -110px;
+    }
+
+    .icon-cart .num {
+        left: -44px;
+        top: -16px;
+    }
+
+    .menu img {
+        position: relative;
+        left: -90px;
+        top: 5px;
+        z-index: 5;
+    }
+
+    .title {
+        margin-left: -220px;
+    }
+
+    .listProduct {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dropdown {
+        margin-top: -16rem;
+        z-index: 6;
+
+    }
+
+    .cartTab {
+        width: 100%;
+        height: 100%;
+        inset: 0 -434px 0 auto;
+    }
+
+    .cartTab .listCart .item {
+        grid-template-columns: 100px 160px 60px 1fr;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+
+
+    html,
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    .containerX .searchBar {
+        margin-top: -64px;
+        width: 155px;
+        margin-left: 17px;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    .suggestions-list {
+        width: 78%;
+        left: 50px;
+    }
+
+    .icon-cart img {
+        left: -140px;
+        top: -110px;
+    }
+
+    .icon-cart .num {
+        left: -44px;
+        top: -16px;
+    }
+
+    .menu img {
+        position: relative;
+        left: -90px;
+        top: 5px;
+        z-index: 5;
+    }
+
+    .title {
+        margin-left: -240px;
+    }
+
+    .listProduct {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dropdown {
+        margin-top: -16rem;
+        z-index: 6;
+
+    }
+
+    .cartTab {
+        width: 100%;
+        height: 100%;
+        inset: 0 -434px 0 auto;
+    }
+
+    .cartTab .listCart .item {
+        grid-template-columns: 100px 160px 60px 1fr;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+
+    html,
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    .containerX .searchBar {
+        margin-top: -64px;
+        width: 145px;
+        margin-left: 17px;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    .suggestions-list {
+        width: 78%;
+        left: 50px;
+    }
+
+    .icon-cart img {
+        left: -140px;
+        top: -110px;
+    }
+
+    .icon-cart .num {
+        left: -44px;
+        top: -16px;
+    }
+
+    .menu img {
+        position: relative;
+        left: -90px;
+        top: 5px;
+        z-index: 5;
+    }
+
+    .title {
+        margin-left: -220px;
+    }
+
+    .listProduct {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dropdown {
+        margin-top: -16rem;
+        z-index: 6;
+
+    }
+
+    .cartTab {
+        width: 100%;
+        height: 100%;
+        inset: 0 -434px 0 auto;
+    }
+
+    .cartTab .listCart .item {
+        grid-template-columns: 100px 160px 60px 1fr;
+    }
+
+}
