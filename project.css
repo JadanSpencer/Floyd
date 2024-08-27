@@ -60,6 +60,8 @@
     html,
     body {
         overflow-x: hidden;
+        overflow-y: auto;
+        height: 100%;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -71,7 +73,6 @@
         /* Converted px to rem, but was 0 */
         background: radial-gradient(circle, teal, rgb(2, 31, 31));
         text-align: center;
-        height: 100vh;
     }
 
     .section1 {
