@@ -638,3 +638,96 @@ body {
         color: white;
     }
 }
+
+@media screen and (max-width: 430px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+
+    .biz {
+        font-size: 40px;
+    }
+
+    .biz h4 {
+        font-size: 30px;
+    }
+
+    .parishes1 {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -800px;
+        gap: 30px;
+    }
+
+    .p2 {
+        margin-left: -70px;
+    }
+
+    .p4 {
+        transform: scale(0.9);
+        margin-left: -50px;
+    }
+
+    .p8 {
+        transform: scale(1);
+        margin-left: -60px;
+    }
+
+    .p10 {
+        margin-left: -90px;
+    }
+
+    .p11 {
+        margin-left: 20px;
+    }
+
+    .parishName {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .parishName .N1 {
+        position: absolute;
+        margin-left: -13px;
+        margin-top: 20px;
+    }
+
+    .parishName .N2 {
+        position: absolute;
+        margin-left: 200px;
+        margin-top: 20px;
+        width: 80px;
+    }
+
+    .parishName .N3 {
+        position: absolute;
+        margin-left: -25px;
+        margin-top: 250px;
+    }
+
+    .parishName .N4 {
+        position: absolute;
+        margin-left: 210px;
+        margin-top: 250px;
+        width: 80px;
+    }
+
+    .parishName .N5 {
+        position: absolute;
+        margin-left: -25px;
+        margin-top: 500px;
+    }
+
+    .parishName .N6 {
+        position: absolute;
+        margin-left: 210px;
+        margin-top: 500px;
+        width: 80px;
+    }
+}

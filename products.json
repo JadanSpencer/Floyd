@@ -178,7 +178,7 @@
         "id": 25,
         "name": "7oz Plastic Cup (case 48x50)",
         "price": 8229.34,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "7oz plastic.png",
         "category": "cups"
     },
     {
@@ -192,56 +192,56 @@
         "id": 26,
         "name": "8oz Paper Cup (case 50x20)",
         "price": 8369,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "80z-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 112,
         "name": "8oz Cup Lid (case 50x20)",
         "price": 5300,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "lid-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 117,
         "name": "8oz Ripple Cup (case 25x20)",
         "price": 9130.44,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "ripple-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 118,
         "name": "8oz Ripple Cup Lid (case 50x20)",
         "price": 9130.44,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "riplid-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 27,
         "name": "9oz Plastic Cup (case 20x50)",
         "price": 5217.39,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "90z-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 119,
         "name": "9/12oz Dome Lid(case 50x20)",
         "price": 9187.50,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "9dome-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 28,
         "name": "12oz Plastic Cup (case 50x20)",
         "price": 280,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "12oz2-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 29,
         "name": "12oz Paper Cup (case 50x20)",
         "price": 6426.08,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "12ozp-removebg-preview.png",
         "category": "cups"
     },
     {
@@ -255,49 +255,49 @@
         "id": 100,
         "name": "12oz Cold Cup (case 50x20)",
         "price": 7687,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "cold-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 101,
         "name": "12oz Smoothie Cup (case 50x20)",
         "price": 16328.75,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "12oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 30,
         "name": "16oz Paper Cup (case 25x40)",
         "price": 16965,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "16oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 103,
         "name": "16oz Smoothie Cup (case 50x20)",
         "price": 18940.62,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "166-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 104,
         "name": "16oz Dome Lid (case 50x20)",
         "price": 9375,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "16lid-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 102,
         "name": "16/12oz Cup Lid (case 50x20)",
         "price": 8100,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "16liddy-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 31,
         "name": "24oz Paper Cup (case 25x20)",
         "price": 11327.50,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "24oz-removebg-preview.png",
         "category": "cups"
     },
     {
@@ -311,7 +311,7 @@
         "id": 32,
         "name": "32oz Paper Bowl&Lid (case 50x20)",
         "price": 13500,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "32oz-removebg-preview.png",
         "category": "cups"
     },
     {
@@ -325,42 +325,42 @@
         "id": 105,
         "name": "1oz Portion Cup (case 25x100)",
         "price": 8162.70,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "1oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 106,
         "name": "1oz Portion Cup w/lid(case 50x40)",
         "price": 8125.00,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "1ozl-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 112,
         "name": "2oz Portion Cup (case 20x50)",
         "price": 6521.73,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "3oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 114,
         "name": "3oz Portion Cup w/lid (case 20x50)",
         "price": 8750,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "2oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 115,
         "name": "4oz Portion Cup (case 20x125)",
         "price": 9988,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "4oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 115,
         "name": "4oz Portion Cup Lid(case 20x125)",
         "price": 7650,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "4ozlid-removebg-preview.png",
         "category": "cups"
     },
     {
@@ -374,56 +374,56 @@
         "id": 34,
         "name": "Burger Box",
         "price": 330,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "burger-removebg-preview.png",
         "category": "lunchBox"
     },
     {
         "id": 35,
         "name": "2 Compartment Box Bagasse (50*4)",
         "price": 8125,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "2compBag-removebg-preview.png",
         "category": "lunchBox"
     },
     {
         "id": 107,
         "name": "2 Compartment Plastic (50*4)",
         "price": 3913.04,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "2-compartment-box-2-removebg-preview.png",
         "category": "lunchBox"
     },
     {
         "id": 36,
         "name": "9x9 1-compartment",
         "price": 360,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "fishbox-removebg-preview.png",
         "category": "lunchBox"
     },
     {
         "id": 37,
         "name": "Coffin Box",
         "price": 370,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "curry-removebg-preview.png",
         "category": "lunchBox"
     },
     {
         "id": 38,
         "name": "Kraft 26oz Box (50*4)",
         "price": 6875,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "kraff-removebg-preview.png",
         "category": "lunchBox"
     },
     {
         "id": 39,
         "name": "Kraft 450z Box (50*4)",
         "price": 9625,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "kraft2-removebg-preview.png",
         "category": "lunchBox"
     },
     {
         "id": 40,
         "name": "Kraft 66oz Box (50*4)",
         "price": 10100,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "kraft9-removebg-preview.png",
         "category": "lunchBox"
     },
     {
