@@ -144,7 +144,7 @@
 
     .images .paperBags {
         scale: 0.6;
-        margin-left: -9.5rem;
+        margin-left: -10rem;
         filter: drop-shadow(0 10px 15px rgb(41, 226, 226));
     }
 
@@ -239,6 +239,7 @@
         margin-top: 14rem;
         font-family: long;
         font-size: 43px;
+        margin-left: 0.9rem;
     }
 
 
@@ -304,7 +305,7 @@
         filter: brightness(0) saturate(100%) invert(88%) sepia(9%) saturate(2269%) hue-rotate(98deg) brightness(95%) contrast(93%);
         scale: 0.13;
         position: absolute;
-        margin-left: -23rem;
+        margin-left: -24rem;
         margin-top: -11rem
     }
 
@@ -326,7 +327,7 @@
         filter: brightness(0) saturate(100%) invert(88%) sepia(9%) saturate(2269%) hue-rotate(98deg) brightness(95%) contrast(93%);
         scale: 0.15;
         position: absolute;
-        margin-left: -23rem;
+        margin-left: -24rem;
         margin-top: -11rem
     }
 
