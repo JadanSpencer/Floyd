@@ -415,14 +415,16 @@ body.showCart .containerZ {
     color: teal;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 432px) {
 
     html,
     body {
         overflow-x: hidden;
+        overflow-y: auto;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        height: 100%;
     }
 
     .containerX .searchBar {
@@ -450,7 +452,6 @@ body.showCart .containerZ {
 
     .menu img {
         scale: 0.18;
-        position: absolute;
         left: -70px;
         top: 180px;
         filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(100%) contrast(105%);
@@ -485,15 +486,15 @@ body.showCart .containerZ {
     }
 
     .cartTab {
-        width: 412px;
+        width: 100%;
         /* Adjust the width as needed */
         position: fixed;
-        inset: 0 415px 0 auto;
+        inset: 0 430px 0 auto;
         /* Adjust inset to ensure it's visible */
         display: grid;
         grid-template-rows: 70px 1fr 70px;
         transition: inset .9s ease-in-out;
-        height: 915px;
+        height: 815px;
         /* Ensure it takes up full height */
     }
 
