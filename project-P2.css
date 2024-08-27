@@ -457,6 +457,7 @@ body.showCart .containerZ {
         filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(100%) contrast(105%);
         transition: .2s ease-in-out;
         cursor: pointer;
+        z-index: 10;
     }
 
     .dropdown {
@@ -494,7 +495,7 @@ body.showCart .containerZ {
         display: grid;
         grid-template-rows: 70px 1fr 70px;
         transition: inset .9s ease-in-out;
-        height: 815px;
+        height: 715px;
         /* Ensure it takes up full height */
     }
 
@@ -506,14 +507,4 @@ body.showCart .containerZ {
     }
 }
 
-@media screen and (max-width: 390px) {
-
-    html,
-    body {
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-}
+@media screen and (max-width: 390px) {}
