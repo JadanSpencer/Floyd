@@ -492,7 +492,7 @@
             position: absolute;
             background: transparent;
             text-align: center;
-            paddi1g: 10px 0;
+            padding: 10px 0;
             margin-top: 20px;
             margin-left: 55px;
             color: white;
@@ -504,6 +504,14 @@
             margin: 0;
             font-size: 10px;
             padding: 13px;
+        }
+
+        .images {
+            margin-left: -1rem;
+        }
+
+        .images .paperBags {
+            transform: scale(0.9);
         }
     }
 
@@ -668,7 +676,7 @@
             position: absolute;
             background: transparent;
             text-align: center;
-            paddi1g: 10px 0;
+            padding: 10px 0;
             margin-top: 20px;
             margin-left: 55px;
             color: white;
