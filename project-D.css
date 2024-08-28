@@ -334,400 +334,101 @@ body {
     color: white;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 430px) {
+
     .biz {
-        color: white;
-        font-size: 40px;
-        font-family: dealer;
+        font-size: 50px;
+        margin-left: 30px;
     }
 
     .biz h4 {
-        font-family: sugar;
         font-size: 30px;
     }
 
     .parishes1 {
-        scale: 0.45;
-        display: grid;
+        margin-top: -50rem;
         grid-template-columns: repeat(2, 1fr);
-        gap: 60px;
-        margin-right: 700px;
-        margin-top: -800px;
-        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(8deg) brightness(104%) contrast(102%) drop-shadow(0 30px 15px black);
-        transition: all ease-in-out 0.4s;
-    }
-
-    .parishes1 .p1 {
-        scale: .9;
-    }
-
-    .parishes1 .p2 {
-        scale: 0.8;
-        margin-left: -90px;
-    }
-
-    .parishes1 .p3 {
-        scale: 0.8;
-    }
-
-    .parishes1 .p4 {
-        scale: 0.8;
-        margin-left: -100px;
-    }
-
-    .parishes1 .p6 {
-        scale: 1.7;
-        margin-left: 20px;
-
-    }
-
-    .parishes1 .p7 {
-        scale: 0.9;
-    }
-
-    .parishes1 .p8 {
-        scale: 0.9;
-        margin-left: -110px;
-    }
-
-    .parishes1 .p9 {
-        scale: 1.9;
-    }
-
-    .parishes1 .p10 {
-        scale: 0.8;
-        margin-left: -90px;
-    }
-
-    .parishes1 .p11 {
-        scale: 1.07;
-        margin-left: 20px;
-    }
-
-    .parishes1 .p12 {
-        scale: 2.05;
-    }
-
-    .parishes1 .p13 {
-        scale: 2;
-    }
-
-    .parishes1 .p1:hover {
-        scale: 1;
-
-    }
-
-    .parishes1 .p2:hover {
-        scale: .9;
-
-    }
-
-    .parishes1 .p3:hover {
-        scale: .9;
-
-    }
-
-    .parishes1 .p4:hover {
-        scale: .9;
-
-    }
-
-    .parishes1 .p5:hover {
-        scale: 1.05;
-
-    }
-
-    .parishes1 .p6:hover {
-        scale: 2.15;
-
-    }
-
-    .parishes1 .p7:hover {
-        scale: 1.04;
-
-    }
-
-    .parishes1 .p8:hover {
-        scale: 1.04;
-
-    }
-
-    .parishes1 .p9:hover {
-        scale: 2.04;
-
-    }
-
-    .parishes1 .p10:hover {
-        scale: 1.09;
-
-    }
-
-    .parishes1 .p11:hover {
-        scale: 1.09;
-
-    }
-
-    .parishes1 .p12:hover {
-        scale: 2.15;
-
-    }
-
-    .parishName {
-        position: absolute;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 200px;
-        top: 500px;
-        left: 100px;
-        font-family: gunplay;
-        font-size: 18px;
-        color: rgb(113, 148, 148);
     }
 
     .parishName .N1 {
         position: absolute;
-        margin-left: -35px;
-        margin-top: 50px;
+        margin-left: -1.9rem;
+        margin-top: 5em;
+        font-size: 25px;
     }
 
     .parishName .N2 {
         position: absolute;
-        margin-left: 190px;
-        margin-top: 50px;
+        margin-left: 230px;
+        margin-top: 5em;
+        font-size: 25px;
+    }
+
+    .parishes1 .p3 {
+        margin-top: 3rem;
     }
 
     .parishName .N3 {
         position: absolute;
-        margin-left: -30px;
-        margin-top: 300px;
+        margin-left: -4rem;
+        margin-top: 15.5em;
+        font-size: 25px;
     }
 
     .parishName .N4 {
         position: absolute;
-        margin-left: 200px;
-        margin-top: 300px;
+        margin-left: 230px;
+        margin-top: 15.5em;
+        font-size: 25px;
     }
 
     .parishName .N5 {
         position: absolute;
-        margin-left: -40px;
-        margin-top: 570px;
+        margin-left: -4rem;
+        margin-top: 26em;
+        font-size: 25px;
     }
 
     .parishName .N6 {
         position: absolute;
-        margin-left: 160px;
-        margin-top: 560px;
+        margin-left: 230px;
+        margin-top: 40rem;
+        font-size: 25px;
     }
 
     .parishName .N7 {
         position: absolute;
-        margin-left: -20px;
-        margin-top: 830px;
+        margin-left: 720px;
+        margin-top: 270px;
     }
 
     .parishName .N8 {
         position: absolute;
-        margin-left: 180px;
-        margin-top: 820px;
+        margin-left: 980px;
+        margin-top: 250px;
     }
 
     .parishName .N9 {
         position: absolute;
-        margin-left: -30px;
-        margin-top: 1080px;
+        margin-left: 210px;
+        margin-top: 510px;
     }
 
     .parishName .N10 {
         position: absolute;
-        margin-left: 160px;
-        margin-top: 1060px;
+        margin-left: 460px;
+        margin-top: 500px;
     }
 
     .parishName .N11 {
         position: absolute;
-        margin-left: -40px;
-        margin-top: 1290px;
+        margin-left: 720px;
+        margin-top: 470px;
     }
 
     .parishName .N12 {
         position: absolute;
-        margin-left: 180px;
-        margin-top: 1310px;
-    }
-
-    /* project-D.css */
-
-    /* Additional styles for the delivery page */
-    .delivery-form-container {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        position: fixed;
-        /* Ensure the form stays on top */
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        /* Semi-transparent background */
-        z-index: 1000;
-        /* Ensure the form is on top of other content */
-    }
-
-    .delivery-form {
-        max-width: 600px;
-        width: 350px;
-        background-color: rgba(15, 96, 99, 0.5);
-        backdrop-filter: blur(10px);
-        color: white;
-        font-family: sugar;
-        font-weight: 700;
-        letter-spacing: 2px;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        position: relative;
-        margin-left: 10px;
-        margin-top: 100px;
-        /* Positioning for the close button */
-    }
-
-    .close-form-btn {
-        position: absolute;
-        top: -20px;
-        right: 0;
-        font-size: 24px;
-        border: none;
-        background: none;
-        cursor: pointer;
-        color: #333;
-    }
-
-    .close-form-btn:hover {
-        background: rgb(23, 163, 163, 0.5);
-        color: #fff;
-        /* Change color on hover */
-    }
-
-    .delivery-form label {
-        display: block;
-        margin-top: 10px;
-    }
-
-    .delivery-form input,
-    .delivery-form select {
-        width: 100%;
-        padding: 8px;
-        margin-top: 5px;
-        box-sizing: border-box;
-    }
-
-    .delivery-form button {
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: white;
-        color: teal;
-        border: none;
-        cursor: pointer;
-        border-radius: 4px;
-    }
-
-    .delivery-form button:hover {
-        background-color: teal;
-        color: white;
-    }
-}
-
-@media screen and (max-width: 430px) {
-
-    html,
-    body {
-        overflow-x: hidden;
-        overflow-y: auto;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        height: 100%;
-    }
-
-
-    .biz {
-        font-size: 40px;
-    }
-
-    .biz h4 {
-        font-size: 30px;
-    }
-
-    .parishes1 {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: -800px;
-        gap: 30px;
-    }
-
-    .p2 {
-        margin-left: -70px;
-    }
-
-    .p4 {
-        transform: scale(0.9);
-        margin-left: -50px;
-    }
-
-    .p8 {
-        transform: scale(1);
-        margin-left: -60px;
-    }
-
-    .p10 {
-        margin-left: -90px;
-    }
-
-    .p11 {
-        margin-left: 20px;
-    }
-
-    .parishName {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .parishName .N1 {
-        position: absolute;
-        margin-left: -13px;
-        margin-top: 20px;
-    }
-
-    .parishName .N2 {
-        position: absolute;
-        margin-left: 200px;
-        margin-top: 20px;
-        width: 80px;
-    }
-
-    .parishName .N3 {
-        position: absolute;
-        margin-left: -25px;
-        margin-top: 250px;
-    }
-
-    .parishName .N4 {
-        position: absolute;
-        margin-left: 210px;
-        margin-top: 250px;
-        width: 80px;
-    }
-
-    .parishName .N5 {
-        position: absolute;
-        margin-left: -25px;
+        margin-left: 980px;
         margin-top: 500px;
-    }
-
-    .parishName .N6 {
-        position: absolute;
-        margin-left: 210px;
-        margin-top: 500px;
-        width: 80px;
     }
 }
