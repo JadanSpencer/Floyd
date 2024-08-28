@@ -353,14 +353,14 @@ body {
     .parishName .N1 {
         position: absolute;
         margin-left: -1.9rem;
-        margin-top: 5em;
+        margin-top: 10rem;
         font-size: 25px;
     }
 
     .parishName .N2 {
         position: absolute;
         margin-left: 230px;
-        margin-top: 5em;
+        margin-top: 10rem;
         font-size: 25px;
     }
 
@@ -371,64 +371,115 @@ body {
     .parishName .N3 {
         position: absolute;
         margin-left: -4rem;
-        margin-top: 15.5em;
+        margin-top: 26rem;
         font-size: 25px;
     }
 
     .parishName .N4 {
         position: absolute;
         margin-left: 230px;
-        margin-top: 15.5em;
+        margin-top: 26rem;
         font-size: 25px;
     }
 
     .parishName .N5 {
         position: absolute;
         margin-left: -4rem;
-        margin-top: 26em;
+        margin-top: 27em;
         font-size: 25px;
     }
 
     .parishName .N6 {
         position: absolute;
         margin-left: 230px;
-        margin-top: 40rem;
+        margin-top: 41rem;
         font-size: 25px;
+    }
+
+    .p7 {
+        margin-top: 5rem;
+    }
+
+    .p8 {
+        margin-top: 5rem;
     }
 
     .parishName .N7 {
         position: absolute;
-        margin-left: 720px;
-        margin-top: 270px;
+        margin-left: -4rem;
+        margin-top: 60rem;
+        font-size: 25px;
     }
 
     .parishName .N8 {
         position: absolute;
-        margin-left: 980px;
-        margin-top: 250px;
+        margin-left: 230px;
+        margin-top: 59rem;
+        font-size: 25px;
     }
 
     .parishName .N9 {
         position: absolute;
-        margin-left: 210px;
-        margin-top: 510px;
+        margin-left: -4rem;
+        margin-top: 75rem;
+        font-size: 25px;
     }
 
     .parishName .N10 {
         position: absolute;
-        margin-left: 460px;
-        margin-top: 500px;
+        margin-left: 200px;
+        margin-top: 75rem;
+        font-size: 25px;
     }
 
     .parishName .N11 {
         position: absolute;
-        margin-left: 720px;
-        margin-top: 470px;
+        margin-left: -3rem;
+        margin-top: 89rem;
+        font-size: 25px;
     }
 
     .parishName .N12 {
         position: absolute;
-        margin-left: 980px;
-        margin-top: 500px;
+        margin-left: 200px;
+        margin-top: 91rem;
+        font-size: 25px;
     }
+
+}
+
+@media screen and (max-width: 390px) {
+    .biz {
+        margin-left: 7rem;
+    }
+
+    .biz span {
+        margin-left: -6rem;
+    }
+
+    .biz h4 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .biz {
+        margin-left: 7rem;
+    }
+
+    .biz span {
+        margin-left: -6rem;
+    }
+
+    .biz h4 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .parishName {
+        margin-top: 2rem;
+    }
+
 }
