@@ -347,7 +347,7 @@ body {
 
     .parishes1 {
         margin-top: -50rem;
-        margin-left: 20rem;
+        margin-left: 10rem;
         grid-template-columns: repeat(2, 1fr);
     }
 
