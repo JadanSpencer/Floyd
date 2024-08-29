@@ -1,29 +1,29 @@
 [
     {
         "id": 1,
-        "name": "3x7 poly",
-        "price": 10,
+        "name": "3x7 poly (15000)",
+        "price": 5217.39,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 2,
-        "name": "4x7 poly",
-        "price": 20,
+        "name": "4x7 poly (12000)",
+        "price": 5434.78,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 3,
-        "name": "5x8 poly",
-        "price": 30,
+        "name": "5x8 poly (10000)",
+        "price": 5326.10,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 4,
-        "name": "6x10 poly",
-        "price": 40,
+        "name": "6x10 poly (7000)",
+        "price": 5652,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
@@ -36,8 +36,8 @@
     },
     {
         "id": 6,
-        "name": "8x12 poly",
-        "price": 60,
+        "name": "8x12 poly (4000)",
+        "price": 5652.17,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
@@ -49,9 +49,16 @@
         "category": "bags"
     },
     {
+        "id": 136,
+        "name": "9x14 Frosted poly (30*100)",
+        "price": 4500,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags"
+    },
+    {
         "id": 8,
-        "name": "9x20 poly",
-        "price": 80,
+        "name": "9x20 poly (1000)",
+        "price": 5652.17,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
@@ -64,7 +71,7 @@
     },
     {
         "id": 10,
-        "name": "10x20 poly",
+        "name": "10x20 poly (2000)",
         "price": 6521.74,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
@@ -78,7 +85,7 @@
     },
     {
         "id": 12,
-        "name": "16x29 poly",
+        "name": "16x29 poly (5*100)",
         "price": 7500,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
@@ -92,78 +99,85 @@
     },
     {
         "id": 14,
-        "name": "1lb paper",
-        "price": 130,
+        "name": "1lb paper (4000)",
+        "price": 10100,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 15,
-        "name": "2lb paper",
-        "price": 140,
+        "name": "2lb paper (3000)",
+        "price": 9900,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 16,
-        "name": "3lb paper",
-        "price": 150,
+        "name": "3lb paper (2000)",
+        "price": 10250,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 17,
-        "name": "4lb paper",
-        "price": 160,
+        "name": "4lb paper (2000)",
+        "price": 10086.96,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 18,
-        "name": "5lb paper",
-        "price": 170,
+        "name": "5lb paper (1500)",
+        "price": 11300,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 19,
-        "name": "6lb paper",
-        "price": 180,
+        "name": "6lb paper (1000)",
+        "price": 8333.32,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags"
+    },
+    {
+        "id": 146,
+        "name": "6lb paper (1500)",
+        "price": 12499.99,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 20,
-        "name": "81b paper",
-        "price": 190,
+        "name": "81b paper (1000)",
+        "price": 8125,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 21,
-        "name": "10lb paper",
-        "price": 200,
+        "name": "10lb paper (1000)",
+        "price": 11000,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 22,
-        "name": "12lb paper",
-        "price": 210,
+        "name": "12lb paper [D] (1000)",
+        "price": 11150,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 23,
-        "name": "14lb paper",
-        "price": 220,
+        "name": "14lb paper (1000)",
+        "price": 12106,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
     {
         "id": 24,
-        "name": "16lb paper",
-        "price": 230,
+        "name": "16lb paper [M] (1000)",
+        "price": 11200,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "bags"
     },
@@ -175,72 +189,93 @@
         "category": "bags"
     },
     {
+        "id": 147,
+        "name": "251b paper",
+        "price": 5560.10,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "bags"
+    },
+    {
         "id": 26,
-        "name": "7oz Plastic Cup (case 48x50)",
+        "name": "7oz Plastic Cup (48*50)",
         "price": 8229.34,
         "image": "7oz plastic.png",
         "category": "cups"
     },
     {
         "id": 27,
-        "name": "7oz Coloured Cup (case 50x50)",
+        "name": "7oz Coloured Cup (50*50)",
         "price": 4875,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 28,
-        "name": "8oz Paper Cup (case 50x20)",
+        "name": "8oz Paper Cup (25*40)",
         "price": 8369,
         "image": "80z-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 29,
-        "name": "8oz Cup Lid (case 50x20)",
+        "name": "8oz Cup Lid (100*10)",
         "price": 5300,
         "image": "lid-removebg-preview.png",
         "category": "cups"
     },
     {
+        "id": 131,
+        "name": "8oz Plastic Cup w/lid (50*6)",
+        "price": 4375,
+        "image": "lid-removebg-preview.png",
+        "category": "cups"
+    },
+    {
         "id": 30,
-        "name": "8oz Ripple Cup (case 25x20)",
+        "name": "8oz Ripple Cup (25*20)",
         "price": 9130.44,
         "image": "ripple-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 31,
-        "name": "8oz Ripple Cup Lid (case 50x20)",
+        "name": "8oz Ripple Cup Lid (50*20)",
         "price": 9130.44,
         "image": "riplid-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 32,
-        "name": "9oz Plastic Cup (case 20x50)",
+        "name": "9oz Plastic Cup (20*50)",
         "price": 5217.39,
         "image": "90z-removebg-preview.png",
         "category": "cups"
     },
     {
+        "id": 138,
+        "name": "9oz Smoothie Cup (40*25)",
+        "price": 13763.25,
+        "image": "90z-removebg-preview.png",
+        "category": "cups"
+    },
+    {
         "id": 33,
-        "name": "9/12oz Dome Lid(case 50x20)",
+        "name": "9/12oz Dome Lid(50*20)",
         "price": 9187.50,
         "image": "9dome-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 34,
-        "name": "12oz Plastic Cup (case 50x20)",
-        "price": 280,
+        "name": "12oz Plastic Cup (20x50)",
+        "price": 6426.08,
         "image": "12oz2-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 35,
-        "name": "12oz Paper Cup (case 50x20)",
-        "price": 6426.08,
+        "name": "12oz Paper Cup (case 25x20)",
+        "price": 7850,
         "image": "12ozp-removebg-preview.png",
         "category": "cups"
     },
@@ -253,63 +288,63 @@
     },
     {
         "id": 37,
-        "name": "12oz Cold Cup (case 50x20)",
+        "name": "12oz Cold Cup (1000)",
         "price": 7687,
         "image": "cold-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 38,
-        "name": "12oz Smoothie Cup (case 50x20)",
+        "name": "12oz Smoothie Cup (50x20)",
         "price": 16328.75,
         "image": "12oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 39,
-        "name": "16oz Paper Cup (case 25x40)",
+        "name": "16oz Paper Cup (25*40)",
         "price": 16965,
         "image": "16oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 40,
-        "name": "16oz Smoothie Cup (case 50x20)",
+        "name": "16oz Smoothie Cup (50*20)",
         "price": 18940.62,
         "image": "166-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 41,
-        "name": "16oz Dome Lid (case 50x20)",
+        "name": "16oz Dome Lid (50*20)",
         "price": 9375,
         "image": "16lid-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 42,
-        "name": "16/12oz Cup Lid (case 50x20)",
+        "name": "16/12oz Cup Lid (50*20)",
         "price": 8100,
         "image": "16liddy-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 43,
-        "name": "24oz Paper Cup (case 25x20)",
+        "name": "24oz Paper Cup (25*20)",
         "price": 11327.50,
         "image": "24oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 44,
-        "name": "24oz Cup Lid (case 25x20)",
+        "name": "24oz Cup Lid (25*20)",
         "price": 5875,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 45,
-        "name": "32oz Paper Bowl&Lid (case 50x20)",
+        "name": "32oz Paper Bowl&Lid (12*25)",
         "price": 13500,
         "image": "32oz-removebg-preview.png",
         "category": "cups"
@@ -330,35 +365,35 @@
     },
     {
         "id": 48,
-        "name": "1oz Portion Cup w/lid(case 50x40)",
+        "name": "1oz Portion Cup w/lid(40*50)",
         "price": 8125.00,
         "image": "1ozl-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 49,
-        "name": "2oz Portion Cup (case 20x50)",
+        "name": "2oz Portion Cup (1000)",
         "price": 6521.73,
         "image": "3oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 50,
-        "name": "3oz Portion Cup w/lid (case 20x50)",
+        "name": "3oz Portion Cup w/lid (20*50)",
         "price": 8750,
         "image": "2oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 51,
-        "name": "4oz Portion Cup (case 20x125)",
+        "name": "4oz Portion Cup (20x125)",
         "price": 9988,
         "image": "4oz-removebg-preview.png",
         "category": "cups"
     },
     {
         "id": 52,
-        "name": "4oz Portion Cup Lid(case 20x125)",
+        "name": "4oz Portion Cup Lid(20x125)",
         "price": 7650,
         "image": "4ozlid-removebg-preview.png",
         "category": "cups"
@@ -393,8 +428,15 @@
     },
     {
         "id": 57,
-        "name": "9x9 1-compartment",
-        "price": 360,
+        "name": "9x9 1-compartment (50*4)",
+        "price": 7009,
+        "image": "fishbox-removebg-preview.png",
+        "category": "lunchBox"
+    },
+    {
+        "id": 137,
+        "name": "9x9 1-compartment Pack (50)",
+        "price": 1752.25,
         "image": "fishbox-removebg-preview.png",
         "category": "lunchBox"
     },
@@ -442,8 +484,8 @@
     },
     {
         "id": 64,
-        "name": "750ml Food Container",
-        "price": 430,
+        "name": "750ml Food Container (150)",
+        "price": 5500,
         "image": "750ml-removebg-preview.png",
         "category": "foodContainer"
     },
@@ -456,22 +498,22 @@
     },
     {
         "id": 66,
-        "name": "1200ml Food Container",
+        "name": "1200ml Food Container (50*3)",
         "price": 7200,
         "image": "1000ml-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 67,
-        "name": "PC-752 Food Container",
-        "price": 440,
+        "name": "PC-752 Food Container (200)",
+        "price": 6563,
         "image": "pc52-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 68,
         "name": "PC-751 Food Container",
-        "price": 470,
+        "price": 11200,
         "image": "pc51-removebg-preview.png",
         "category": "foodContainer"
     },
@@ -512,50 +554,113 @@
     },
     {
         "id": 74,
-        "name": "1lb Aluminum Pan",
+        "name": "1lb Aluminum Pan (1000)",
         "price": 8136.13,
         "image": "1lb-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 75,
-        "name": "1lb Aluminum Pan Lid",
+        "name": "1lb Aluminum Pan Lid (1000)",
         "price": 3391.30,
         "image": "1lblid-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 76,
-        "name": "1.5lb Aluminum Pan",
+        "name": "1.5lb Aluminum Pan (1000)",
         "price": 9347.83,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 77,
-        "name": "1.5lb Aluminum Pan Lid",
+        "name": "1.5lb Aluminum Pan Lid (1000)",
         "price": 3206.52,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 78,
-        "name": "2.25lb Aluminum Pan",
+        "name": "2.25lb Aluminum Pan (1000)",
         "price": 13904.35,
         "image": "2.25lb-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 79,
-        "name": "2.25lb Aluminum Pan Lid",
+        "name": "2.25lb Aluminum Pan Lid (1000)",
         "price": 5200,
         "image": "2.25lid-removebg-preview.png",
         "category": "foodContainer"
     },
     {
+        "id": 126,
+        "name": "7inch Aluminum Pan (500)",
+        "price": 6969.56,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 127,
+        "name": "7inch Aluminum Pan Lid (500)",
+        "price": 4300,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 129,
+        "name": "8inch Aluminum Pan (500)",
+        "price": 7952.60,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 130,
+        "name": "8inch Aluminum Pan Lid (500)",
+        "price": 3323.47,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 133,
+        "name": "9inch Aluminum Pan (500)",
+        "price": 12900,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 134,
+        "name": "9inch Aluminum Pan Lid (500)",
+        "price": 6700,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 125,
+        "name": "6inch Plastic Plate (40*25)",
+        "price": 6000,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 132,
+        "name": "9inch Plastic Plate (25*20)",
+        "price": 7300,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
+        "id": 135,
+        "name": "9inch Bagasse Plate (10*25)",
+        "price": 4562.50,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "foodContainer"
+    },
+    {
         "id": 80,
-        "name": "33*40 Black Garbage Bag",
-        "price": 530,
+        "name": "33*40 Black Garbage Bag (10*25)",
+        "price": 5200,
         "image": "33b-removebg-preview.png",
         "category": "householdSupplies"
     },
@@ -568,8 +673,15 @@
     },
     {
         "id": 82,
-        "name": "38*60 Black Garbage Bag",
-        "price": 550,
+        "name": "38*60 Black Garbage Bag 14Micron (8*25)",
+        "price": 5980,
+        "image": "38b-removebg-preview.png",
+        "category": "householdSupplies"
+    },
+    {
+        "id": 145,
+        "name": "38*60 Black Garbage Bag 17micron (8*25)",
+        "price": 6550,
         "image": "38b-removebg-preview.png",
         "category": "householdSupplies"
     },
@@ -578,6 +690,27 @@
         "name": "38*60 Clear Garbage Bag",
         "price": 560,
         "image": "38c-removebg-preview.png",
+        "category": "householdSupplies"
+    },
+    {
+        "id": 144,
+        "name": "40*48 Black Garbage Bag (250)",
+        "price": 4117.50,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "householdSupplies"
+    },
+    {
+        "id": 142,
+        "name": "Auto-cut JRHT Dispenser",
+        "price": 10835.31,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "householdSupplies"
+    },
+    {
+        "id": 143,
+        "name": "Automatic Soap Dispenser (700ml)",
+        "price": 6956.52,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
@@ -603,8 +736,15 @@
     },
     {
         "id": 87,
-        "name": "750ft Hand-towel",
-        "price": 600,
+        "name": "750ft Hand-towel (6rolls)",
+        "price": 6125,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "householdSupplies"
+    },
+    {
+        "id": 139,
+        "name": "Aluminum Foil 12*1000",
+        "price": 5900,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
@@ -652,15 +792,15 @@
     },
     {
         "id": 94,
-        "name": "Bouffant Cap case (10x100units)",
-        "price": 650,
+        "name": "Bouffant Cap (10*100units)",
+        "price": 6845,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
         "id": 95,
         "name": "Bouffant Cap pack (100units)",
-        "price": 660,
+        "price": ,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
@@ -743,15 +883,22 @@
     },
     {
         "id": 107,
-        "name": "18L Bin",
+        "name": "18Litre Bin",
         "price": 3200,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
         "id": 108,
-        "name": "30L Bin",
-        "price": 790,
+        "name": "30Litre Bin",
+        "price": 4100,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "householdSupplies"
+    },
+    {
+        "id": 128,
+        "name": "70Litre Bin",
+        "price": 8250,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "householdSupplies"
     },
@@ -813,35 +960,35 @@
     },
     {
         "id": 117,
-        "name": "#1 Meat Tray",
+        "name": "#1 Meat Tray (50*10)",
         "price": 2829.47,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other"
     },
     {
         "id": 118,
-        "name": "#1.5 Meat Tray",
+        "name": "#1.5 Meat Tray (50*10)",
         "price": 3039.74,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other"
     },
     {
         "id": 119,
-        "name": "#2 Meat Tray",
+        "name": "#2 Meat Tray (50*10)",
         "price": 3799.40,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other"
     },
     {
         "id": 120,
-        "name": "#4 Meat Tray",
+        "name": "#4 Meat Tray (50*5)",
         "price": 3064.61,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other"
     },
     {
         "id": 121,
-        "name": "#8 Meat Tray",
+        "name": "#8 Meat Tray (50*5)",
         "price": 3677.30,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other"
@@ -855,7 +1002,7 @@
     },
     {
         "id": 123,
-        "name": "18*1500 Palette Wrap",
+        "name": "18*1500 Palette Wrap (6rolls)",
         "price": 12521.80,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other"
@@ -864,6 +1011,20 @@
         "id": 124,
         "name": "2 Wheel Trolley",
         "price": 17391.30,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "other"
+    },
+    {
+        "id": 140,
+        "name": "Auto-Transmission Fluid",
+        "price": 2500,
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "category": "other"
+    },
+    {
+        "id": 141,
+        "name": "Synthetic Motor Oil (10/30)",
+        "price": 1491,
         "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "other"
     }
