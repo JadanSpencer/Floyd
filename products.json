@@ -948,7 +948,7 @@
         "id": 135,
         "name": "Industrial Hand-towel (12)",
         "price": 4173.91,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "industry-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
@@ -962,7 +962,7 @@
         "id": 137,
         "name": "Sophie Tissues (24rolls)",
         "price": 2275,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "sophie-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
@@ -976,7 +976,7 @@
         "id": 139,
         "name": "350ft Hand-towel (12)",
         "price": 5400,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "350ft-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
@@ -1053,7 +1053,7 @@
         "id": 150,
         "name": "Jumbo Tissue (12)",
         "price": 5320,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "jumbo-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
@@ -1067,21 +1067,21 @@
         "id": 152,
         "name": "Weave Hand-Towel (25 rolls)",
         "price": 6306.25,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "weavehand-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
         "id": 153,
         "name": "Weave Luncheon Napkin (18*100)",
         "price": 4000,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "weaveluncheon-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
         "id": 154,
         "name": "Weave 280 sht Tissue (24rolls)",
         "price": 1875,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "weave280-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
@@ -1102,28 +1102,28 @@
         "id": 157,
         "name": "Hairnet case (10x100)",
         "price": 14218.75,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "hairnet-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
         "id": 158,
         "name": "Hairnet Pack (100)",
         "price": 1561.80,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "hairnet-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
         "id": 159,
         "name": "Bouffant Cap (10*100units)",
         "price": 6845,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "bouffant_cap-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
         "id": 160,
         "name": "Bouffant Cap pack (100units)",
         "price": 0,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "bouffant_cap-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
@@ -1284,7 +1284,7 @@
         "id": 183,
         "name": "80Litre Bin",
         "price": 8740,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "18bin-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
@@ -1298,7 +1298,7 @@
         "id": 185,
         "name": "Purple Blast (single)",
         "price": 950,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "purpleblast-removebg-preview.png",
         "category": "householdSupplies"
     },
     {
