@@ -507,7 +507,7 @@
         "id": 73,
         "name": "Mini Box (50*8)",
         "price": 5130.50,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "mini-removebg-preview.png",
         "category": "lunchBox"
     },
     {
@@ -549,7 +549,7 @@
         "id": 78,
         "name": "Curry Goat Bagasse (50*8)",
         "price": 6097,
-        "image": "curry-removebg-preview.png",
+        "image": "curryBag-removebg-preview.png",
         "category": "lunchBox"
     },
     {
@@ -563,21 +563,21 @@
         "id": 80,
         "name": "Forks (40*25)",
         "price": 1808.70,
-        "image": "curry-removebg-preview.png",
+        "image": "forks-removebg-preview.png",
         "category": "lunchBox"
     },
     {
         "id": 81,
         "name": "Spoons (40*25)",
         "price": 1808.70,
-        "image": "curry-removebg-preview.png",
+        "image": "spoons-removebg-preview.png",
         "category": "lunchBox"
     },
     {
         "id": 82,
         "name": "Forks w/Napkins (100*10)",
         "price": 4173.92,
-        "image": "curry-removebg-preview.png",
+        "image": "forkNap-removebg-preview.png",
         "category": "lunchBox"
     },
     {
