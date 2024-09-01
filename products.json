@@ -584,7 +584,7 @@
         "id": 83,
         "name": "Spoons w/Napkins (100*10)",
         "price": 4173.92,
-        "image": "curry-removebg-preview.png",
+        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
         "category": "lunchBox"
     },
     {
@@ -696,7 +696,7 @@
         "id": 99,
         "name": "Cake Wedge Slice Container (200)",
         "price": 10250,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "wedgecake-removebg-preview.png",
         "category": "foodContainer"
     },
     {
@@ -759,7 +759,7 @@
         "id": 108,
         "name": "7inch Aluminum Pan (500)",
         "price": 6969.56,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "7pan-removebg-preview.png",
         "category": "foodContainer"
     },
     {
@@ -773,7 +773,7 @@
         "id": 110,
         "name": "8inch Aluminum Pan (500)",
         "price": 7952.60,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "8pan-removebg-preview.png",
         "category": "foodContainer"
     },
     {
@@ -787,7 +787,7 @@
         "id": 112,
         "name": "9inch Aluminum Pan (500)",
         "price": 12900,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "9pan-removebg-preview.png",
         "category": "foodContainer"
     },
     {
@@ -801,49 +801,49 @@
         "id": 114,
         "name": "Full size Aluminum Pan (50)",
         "price": 5652.17,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "fullsize-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 115,
         "name": "Full size Lid (50)",
         "price": 3826.08,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "fulllid-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 116,
         "name": "Half size Aluminum Pan (100)",
         "price": 4154.35,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "halfsize-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 117,
         "name": "Half size Lid (100)",
         "price": 3086.08,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "halfsizelid-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 118,
         "name": "6inch Plastic Plate (40*25)",
         "price": 6000,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "6inchplate-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 119,
         "name": "9inch Plastic Plate (25*20)",
         "price": 7300,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "9inch-removebg-preview.png",
         "category": "foodContainer"
     },
     {
         "id": 120,
         "name": "9inch Bagasse Plate (10*25)",
         "price": 4562.50,
-        "image": "427-4273575_white-question-mark-vector-png-download-white-question-removebg-preview.png",
+        "image": "9bagasse-removebg-preview.png",
         "category": "foodContainer"
     },
     {
