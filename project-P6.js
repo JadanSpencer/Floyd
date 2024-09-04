@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const addToCart = (productId) => {
+    /*const addToCart = (productId) => {
         console.log('Adding item to cart:', productId);
         const existingProduct = carts.find(cart => cart.product_id === productId);
         if (existingProduct) {
@@ -81,6 +81,18 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             carts.push({ product_id: productId, quantity: 1 });
         }
+        updateCartHtml();
+        localStorage.setItem('cart', JSON.stringify(carts));
+    };*/
+
+    const addToCart = (productId, quantity) => {
+        console.log('Adding item to cart:', productId, 'Quantity:', quantity);
+        const existingProduct = carts.find(cart => cart.product_id === productId);
+        if (existingProduct) {
+            existingProduct.quantity += quantity;
+        } else {
+            carts.push({product_id: productId, quantity: quantity});
+        }  
         updateCartHtml();
         localStorage.setItem('cart', JSON.stringify(carts));
     };
@@ -240,11 +252,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const handleCartButtonClick = (event) => {
+    /*const handleCartButtonClick = (event) => {
         if (event.target.classList.contains('addCart')) {
             const productId = event.target.parentElement.dataset.id;
             console.log('Add to Cart button clicked, Product ID:', productId);
             addToCart(parseInt(productId, 10));
+        }
+    };*/
+
+    const handleCartButtonClick = (event) => {
+        const productId = event.target.parentElement.dataset.id;
+        if (event.target.classlist.contains('addCart')) {
+            console.log('Add to Cart button clicked, Product Id:', productId);
+            addToCart(parseInt(productId, 10), 1);
+        } else if (event.target.classlist.contains('addCart10')) {
+            console.log('Add +10 button clicked, Product Id:', productId);
+            addToCart(parseInt(productId, 10), 10);
         }
     };
 
