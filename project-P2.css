@@ -263,7 +263,7 @@ header .icon-cart span {
 
 .listProduct .item .price {
     letter-spacing: 3px;
-    font-size: small;
+    font-size: 24px;
 }
 
 .listProduct .item button {
