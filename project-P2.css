@@ -532,6 +532,7 @@ body.showCart .containerZ {
         height: 100%;
     }
 
+    .companyName,
     .containerX {
         position: fixed;
     }
