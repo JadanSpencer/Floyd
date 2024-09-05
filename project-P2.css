@@ -532,13 +532,8 @@ body.showCart .containerZ {
         height: 100%;
     }
 
-    .companyName,
-    .containerX {
-        position: fixed;
-    }
-
     .containerX .searchBar {
-        margin-top: 84px;
+        margin-top: -64px;
         width: 180px;
         margin-left: 25px;
     }
