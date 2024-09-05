@@ -532,6 +532,10 @@ body.showCart .containerZ {
         height: 100%;
     }
 
+    .containerX {
+        position: fixed;
+    }
+
     .containerX .searchBar {
         margin-top: -64px;
         width: 180px;
