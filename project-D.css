@@ -76,7 +76,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 60px;
-    margin-right: 350px;
+    margin-right: 700px;
     margin-top: -400px;
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(8deg) brightness(104%) contrast(102%) drop-shadow(0 50px 10px black);
     transition: all ease-in-out 0.4s;
