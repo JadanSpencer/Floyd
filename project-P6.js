@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchBar = document.getElementById('search-bar');
     const suggestionsList = document.getElementById('suggestions');
     const checkoutButton = document.querySelector('.checkout');
+    const quantityAddedDisplay = document.querySelector('.listProduct .quantityAdded'); // New reference
     let listProducts = [];
     let carts = [];
     let currentIndex = -1;
@@ -74,6 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                 listProductHTML.appendChild(newProduct);
             });
+
+            // Append the quantity display element
+            const quantityDisplay = document.createElement('div');
+            quantityDisplay.classList.add('quantityAdded');
+            quantityDisplay.innerText = '0 added';
+            listProductHTML.appendChild(quantityDisplay);
         }
     };
 
@@ -87,6 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         updateCartHtml();
         localStorage.setItem('cart', JSON.stringify(carts));
+        updateQuantityDisplay(); // Call to update the quantity display
+    };
+
+    const updateQuantityDisplay = () => {
+        const totalQuantity = carts.reduce((acc, cart) => acc + cart.quantity, 0);
+        quantityAddedDisplay.innerText = `${totalQuantity} added`;
     };
 
     const updateCartHtml = () => {
@@ -123,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         amount.innerText = totalQuantity;
         document.querySelector('.totalPriceContainer .totalPrice').innerText = `$${totalPrice.toFixed(2)}`;
+        updateQuantityDisplay(); // Ensure display is updated
     };
 
     const handleCartQuantityChange = (productId, type) => {
@@ -287,3 +301,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initApp();
 });
+
