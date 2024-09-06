@@ -138,6 +138,10 @@ body {
     margin-left: -100px;
 }
 
+::placeholder {
+    color: white;
+}
+
 main {
     padding: 40px 0;
 }

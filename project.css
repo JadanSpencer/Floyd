@@ -668,7 +668,7 @@
             position: absolute;
             filter: brightness(0) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
             scale: 0.4;
-            margin-top: -227px;
+            margin-top: -217px;
             margin-left: 690px;
             transform: rotate(-5deg);
         }
@@ -677,7 +677,7 @@
             position: absolute;
             filter: brightness(0) saturate(100%) invert(28%) sepia(11%) saturate(7311%) hue-rotate(148deg) brightness(101%) contrast(101%);
             scale: 0.2;
-            margin-top: -290px;
+            margin-top: -280px;
             margin-left: 540px;
 
         }
