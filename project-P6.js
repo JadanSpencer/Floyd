@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const amount = document.querySelector('.icon-cart span');
     const searchBar = document.getElementById('search-bar');
     const suggestionsList = document.getElementById('suggestions');
-    const checkoutButton = document.querySelector('.checkout'); // Ensure this matches your HTML
+    const checkoutButton = document.querySelector('.checkout');
     let listProducts = [];
     let carts = [];
     let currentIndex = -1;
@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const fetchProducts = async () => {
         try {
             const response = await fetch('products.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
             const data = await response.json();
             listProducts = data;
             localStorage.setItem('listProducts', JSON.stringify(listProducts));
@@ -67,19 +70,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${product.name}</h2>
                     <div class="price">$${product.price}</div>
                     <button class="addCart">Add to cart</button>
+                    <button class="addCartTen">+10</button>
                 `;
                 listProductHTML.appendChild(newProduct);
             });
         }
     };
 
-    const addToCart = (productId) => {
-        console.log('Adding item to cart:', productId);
+    const addToCart = (productId, quantity = 1) => {
+        console.log('Adding item to cart:', productId, 'Quantity:', quantity);
         const existingProduct = carts.find(cart => cart.product_id === productId);
         if (existingProduct) {
-            existingProduct.quantity += 1;
+            existingProduct.quantity += quantity;
         } else {
-            carts.push({ product_id: productId, quantity: 1 });
+            carts.push({ product_id: productId, quantity: quantity });
         }
         updateCartHtml();
         localStorage.setItem('cart', JSON.stringify(carts));
@@ -245,6 +249,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const productId = event.target.parentElement.dataset.id;
             console.log('Add to Cart button clicked, Product ID:', productId);
             addToCart(parseInt(productId, 10));
+        } else if (event.target.classList.contains('addCartTen')) {
+            const productId = event.target.parentElement.dataset.id;
+            console.log('Add +10 to Cart button clicked, Product ID:', productId);
+            addToCart(parseInt(productId, 10), 10);
         }
     };
 
@@ -275,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
     searchBar.addEventListener('keydown', handleSearchKeyDown);
     listProductHTML.addEventListener('click', handleCartButtonClick);
     listCartHtml.addEventListener('click', handleCartQuantityChangeClick);
-    checkoutButton.addEventListener('click', handleCheckoutClick); // Ensure this matches your HTML
+    checkoutButton.addEventListener('click', handleCheckoutClick);
 
     initApp();
 });
