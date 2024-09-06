@@ -135,6 +135,10 @@ body {
     margin-left: -100px;
 }
 
+::placeholder {
+    color: rgb(241, 241, 241);
+}
+
 .containerZ {
     width: 900px;
     max-width: 90vw;
