@@ -345,9 +345,13 @@
 
     @media screen and (max-width: 430px) {
 
+        .companyTitle {
+            text-shadow: solid 7px whitesmoke;
+        }
+
         .searchBar {
             padding: 7px 250px;
-        }
+        } 
 
         .searchBar input {
             margin-left: -240px;
@@ -401,7 +405,6 @@
 
         ::placeholder {
             color: white;
-            opacity: 0.7;
         }
 
         .footer {
