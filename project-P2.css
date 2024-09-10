@@ -320,6 +320,8 @@ body.showCart .containerZ {
     padding: 20px;
     margin: 0;
     font-weight: 500;
+    background-color: rgb(3, 48, 48);
+    width: 100%;
 }
 
 .cartTab .btn {
