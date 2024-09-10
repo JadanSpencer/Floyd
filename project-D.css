@@ -360,6 +360,7 @@ body {
         height: 3000px;
         margin-top: -42rem;
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 10rem;
     }
 
     .parishName .N1 {
