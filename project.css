@@ -365,6 +365,7 @@
         .Islider .slides img {
             width: 100%;
             height: auto;
+            transform: scale(0.8);
         }
 
         .Islider .slide {
@@ -372,7 +373,8 @@
             box-sizing: border-box;
         }
 
-        .Islider button {
+        .Islider button .prev,
+        .next {
             position: absolute;
             top: 50%;
             width: 50px;
@@ -388,7 +390,7 @@
         }
 
         .Islider button .prev {
-            right: -10px;
+            left: 0;
         }
 
         .Islider button .next {
