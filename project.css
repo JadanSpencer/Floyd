@@ -366,7 +366,7 @@
             width: 100%;
             height: auto;
             transform: scale(0.8);
-            background: linear-gradient(135deg, #7fffd4, gray);
+            background: linear-gradient(135deg, white, gray, white);
             border-radius: 50px;
         }
 
