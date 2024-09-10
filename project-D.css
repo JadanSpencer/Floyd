@@ -337,16 +337,6 @@ body {
 
 @media screen and (max-width: 430px) {
 
-    html,
-    body {
-        overflow-x: hidden;
-        overflow-y: auto;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        height: 100%;
-    }
-
     .biz {
         font-size: 50px;
         margin-left: 30px;
