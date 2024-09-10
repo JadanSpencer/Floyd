@@ -348,9 +348,9 @@ body {
 
     .parishes1 {
         height: 3000px;
-        margin-top: -44rem;
+        margin-top: -45rem;
         grid-template-columns: repeat(2, 1fr);
-        margin-left: 8rem;
+        margin-left: 5rem;
     }
 
     .parishName .N1 {
