@@ -671,12 +671,20 @@
         slides.style.transform = `translateX(${-currentIndex * 100}%)`;
     }
 
+    document.querySelector('.next').addEventListener('click', () => {
+    showSlide(index + 1);
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    showSlide(index - 1);
+});
+
     function changeSlide(n) {
         showSlide(currentIndex + n);
     }
 
     // Auto-slide functionality
-    setInterval(() => changeSlide(1), 3000); // Change slide every 3 seconds
+    setInterval(() => changeSlide(1), 7000); // Change slide every 3 seconds
 
     // Initial call
     showSlide(currentIndex);
