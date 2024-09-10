@@ -234,6 +234,10 @@
         color: rgb(2, 31, 31);
     }
 
+    .Islider {
+        display: none;
+    }
+
     .why {
         color: white;
         margin-top: 14rem;
@@ -344,6 +348,47 @@
     }
 
     @media screen and (max-width: 430px) {
+
+        .Islider {
+            display: block;
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .Islider .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .Islider .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .Islider button {
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 100;
+            font-size: 24px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .Islider button .prev {
+            left: 0;
+        }
+
+        .Islider button .next {
+            right: 0;
+        }
 
         .companyTitle {
             font-size: 62px;

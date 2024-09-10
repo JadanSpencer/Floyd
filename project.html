@@ -94,6 +94,16 @@
                 <svg src="layered-waves-haikei.svg"></svg>
             </div>
 
+            <div class="Islider">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <div class="slides">
+                    <img src="meatFilm1.png" alt="Image 1" class="slide">
+                    <img src="curry-removebg-preview.png" alt="Image 2" class="slide">
+                    <img src="SoupCupBlk1.png" alt="Image 3" class="slide">
+                </div>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+
             <h1 class="why">Why Choose Floyd's?</h1>
 
             <div class="whyContent">
@@ -644,6 +654,33 @@
         });
 
     </script>
+
+<script>
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        if (index >= totalSlides) {
+            currentIndex = 0;
+        } else if (index < 0) {
+            currentIndex = totalSlides - 1;
+        } else {
+            currentIndex = index;
+        }
+        slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+    }
+
+    function changeSlide(n) {
+        showSlide(currentIndex + n);
+    }
+
+    // Auto-slide functionality
+    setInterval(() => changeSlide(1), 3000); // Change slide every 3 seconds
+
+    // Initial call
+    showSlide(currentIndex);
+</script>
 
 </body>
 
