@@ -56,7 +56,7 @@
                 <img src="2-compartment-box-2-removebg-preview.png" alt="2compartment">
                 <h2>Food Container</h2>
                 <div class="price">$10</div>
-                <button class="addCart">Add to truck</button>
+                <button class="addCart" onclick="showLoading(this)">Add to truck</button>
                 <button class="addCartTen">+10</button>
                 <div class="quantityAdded">0 added</div>
             </div>
@@ -112,6 +112,32 @@
                 }
             });
         });
+    </script>
+
+    <script>
+        function showLoading(button) {
+    // Create a spinner element
+    const spinner = document.createElement("span");
+    spinner.className = "spinner";
+
+    // Add the spinner to the button
+    button.appendChild(spinner);
+
+    // Show the spinner
+    spinner.style.display = "inline-block";
+
+    // Disable the button to prevent multiple clicks
+    button.disabled = true;
+
+    // Simulate a loading process (for demonstration purposes)
+    setTimeout(() => {
+        // Hide the spinner and re-enable the button
+        spinner.style.display = "none";
+        button.disabled = false;
+        button.removeChild(spinner);
+    }, 3000); // 3 seconds loading time
+}
+
     </script>
 
 
