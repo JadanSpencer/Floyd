@@ -360,6 +360,8 @@
         .Islider .slides {
             display: flex;
             transition: transform 0.5s ease-in-out;
+            background-color: aquamarine;
+            border-radius: 50%;
         }
 
         .Islider .slides img {
