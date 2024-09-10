@@ -388,7 +388,7 @@
         }
 
         .Islider button .prev {
-            left: -70px;
+            right: -10px;
         }
 
         .Islider button .next {
