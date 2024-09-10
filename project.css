@@ -366,7 +366,8 @@
             width: 100%;
             height: auto;
             transform: scale(0.8);
-            background: linear-gradient(135deg, #7fffd4, #aaf0d1);
+            background: linear-gradient(135deg, #7fffd4, gray);
+            border-radius: 50px;
         }
 
         .Islider .slide {
