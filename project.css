@@ -373,8 +373,7 @@
             box-sizing: border-box;
         }
 
-        .Islider button .prev,
-        .next {
+        .Islider button {
             position: absolute;
             top: 50%;
             width: 50px;
@@ -387,6 +386,7 @@
             font-size: 24px;
             line-height: 50px;
             text-align: center;
+            display: none;
         }
 
         .Islider button .prev {
