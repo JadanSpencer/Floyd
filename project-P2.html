@@ -60,6 +60,7 @@
                 <button class="addCartTen">+10</button>
                 <div class="quantityAdded">0 added</div>
             </div>
+            <div class="loader" id="loader"></div>
         </div>
     </div>
 
@@ -112,35 +113,25 @@
                 }
             });
         });
+
     </script>
 
     <script>
         function showLoading(button) {
-    // Create a spinner element
-    const spinner = document.createElement("span");
-    spinner.className = "spinner";
-
-    // Add the spinner to the button
-    button.appendChild(spinner);
-
-    // Show the spinner
-    spinner.style.display = "inline-block";
-
-    // Disable the button to prevent multiple clicks
-    button.disabled = true;
-
-    // Simulate a loading process (for demonstration purposes)
+    // Get the loader element
+    const loader = document.getElementById('loader');
+    
+    // Show the loader
+    loader.style.display = 'block';
+    
+    // Simulate a delay (e.g., 2 seconds) for the loader
     setTimeout(() => {
-        // Hide the spinner and re-enable the button
-        spinner.style.display = "none";
-        button.disabled = false;
-        button.removeChild(spinner);
-    }, 3000); // 3 seconds loading time
+        // Hide the loader after the delay
+        loader.style.display = 'none';
+    }, 2000); // 2000 milliseconds = 2 seconds
 }
 
     </script>
-
-
 
 
 </body>
