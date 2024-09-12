@@ -91,6 +91,20 @@
         color: rgb(109, 233, 233);
         font-family: long;
         margin-top: 3rem;
+        opacity: 0;
+        transform: scale(2);
+        animation: shrinkFade 4s forwards;
+    }
+
+    @keyframes shrinkFade {
+        0% {
+            transform: scale(2); /* Start larger */
+            opacity: 0; /* Fully transparent */
+          }
+          100% {
+            transform: scale(1); /* Normal size */
+            opacity: 1; /* Fully visible */
+          }
     }
 
     .companyTitle1 {
