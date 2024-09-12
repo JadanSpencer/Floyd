@@ -120,10 +120,23 @@
         height: 80px;
         background-color: teal;
         margin-top: 3rem;
+        opacity: 0;
+        animation: fade 1s;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     .navbar {
         margin-top: -2.5rem;
+        opacity: 0;
+        animation: fade 1.3s;
     }
 
     .navbar a {
@@ -133,6 +146,8 @@
         font-weight: 200;
         font-family: sugar;
         color: whitesmoke;
+        opacity: 0;
+        animation: fade 1.3s;
     }
 
     .searchBar {
@@ -146,6 +161,8 @@
         border-radius: 50px;
         background: rgb(35, 192, 192);
         border: solid 1px white;
+        opacity: 0;
+        animation: shrinkFade 1s forwards;
     }
 
     .searchBar input {
