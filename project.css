@@ -175,7 +175,6 @@
         scale: 0.6;
         margin-left: -10rem;
         filter: drop-shadow(0 10px 15px rgb(41, 226, 226));
-        opacity: 0;
         animation: growFade 3s backwards;
     }
     @keyframes growFade {
