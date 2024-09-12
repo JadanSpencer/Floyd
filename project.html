@@ -696,24 +696,6 @@ document.querySelector('.prev').addEventListener('click', () => {
     showSlide(currentIndex);
 </script>
 
-<script>
-    // JavaScript
-document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll(".easyTitle");
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible"); // Add class when in view
-      }
-    });
-  });
-
-  elements.forEach((el) => observer.observe(el));
-});
-
-</script>
-
 </body>
 
 </html>
