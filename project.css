@@ -201,6 +201,14 @@
     .easyTitle {
         color: aqua;
         font-family: sugar;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s, transform 1s;
+    }
+
+    .easyTitle .visible {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .shopTitle {
