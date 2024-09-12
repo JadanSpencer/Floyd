@@ -201,7 +201,7 @@
     .easyTitle {
         color: aqua;
         font-family: sugar;
-        animation: fade 2a;
+        animation: fade 2s;
     }
 
     .shopTitle {
