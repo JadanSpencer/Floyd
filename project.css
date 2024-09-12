@@ -93,7 +93,7 @@
         margin-top: 3rem;
         opacity: 0;
         transform: scale(2);
-        animation: shrinkFade 2s forwards;
+        animation: shrinkFade 0.7s forwards;
     }
 
     @keyframes shrinkFade {
@@ -112,7 +112,7 @@
         color: teal;
         font-family: bake;
         margin-top: -0.5rem;
-        animation: shrinkFade 2.5s forwards;
+        animation: shrinkFade 0.9s forwards;
     }
 
     .rectangleIchi {
@@ -144,7 +144,7 @@
         font-weight: 200;
         font-family: sugar;
         color: whitesmoke;
-        animation: fade 1.3s;
+        animation: fade 1.5s;
     }
 
     .searchBar {
@@ -175,7 +175,7 @@
         scale: 0.6;
         margin-left: -10rem;
         filter: drop-shadow(0 10px 15px rgb(41, 226, 226));
-        animation: growFade 3s backwards;
+        animation: growFade 1.7s backwards;
     }
     @keyframes growFade {
         0% {
@@ -201,6 +201,7 @@
     .easyTitle {
         color: aqua;
         font-family: sugar;
+        animation: fade 2a;
     }
 
     .shopTitle {
