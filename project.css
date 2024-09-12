@@ -93,7 +93,7 @@
         margin-top: 3rem;
         opacity: 0;
         transform: scale(2);
-        animation: shrinkFade 4s forwards;
+        animation: shrinkFade 3s forwards;
     }
 
     @keyframes shrinkFade {
@@ -112,6 +112,7 @@
         color: teal;
         font-family: bake;
         margin-top: -0.5rem;
+        animation: shrinkFade 2.5s forwards;
     }
 
     .rectangleIchi {
